@@ -1,0 +1,113 @@
+<!-- <firebase-ui></firebase-ui> -->
+<ion-header>
+  <ion-toolbar color = "tertiary">
+    <h2 class="font" text-center >Live Analysis</h2> 
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <ion-segment [(ngModel)]="segment" >
+  
+  <ion-slides pager="false" [options]="graph">
+    <ion-slide>
+      <ion-segment-button value="chart" >
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Rakesh day analysis</ion-card-subtitle>
+      <ion-card-title>TODAY'S ANALYSIS</ion-card-title>
+    </ion-card-header>
+    <!-- <ion-card-content>
+      <google-chart [data]="columnChart1"></google-chart>
+    </ion-card-content> -->
+  </ion-card>
+  </ion-segment-button>
+  </ion-slide>
+  <ion-slide>
+
+  <ion-segment-button value="chart1">
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Jacob day analysis</ion-card-subtitle>
+      <ion-card-title>TODAY'S ANALYSIS</ion-card-title>
+    </ion-card-header>
+    <!-- <ion-card-content>
+      <google-chart [data]="columnChart1"></google-chart>
+    </ion-card-content> -->
+  </ion-card>
+  </ion-segment-button>
+  </ion-slide>
+  <ion-slide>
+
+  <ion-segment-button value="chart2">
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Arjun day analysis</ion-card-subtitle>
+      <ion-card-title>TODAY'S ANALYSIS</ion-card-title>
+    </ion-card-header>
+    <!-- <ion-card-content>
+      <google-chart [data]="columnChart1"></google-chart>
+    </ion-card-content> -->
+  </ion-card>
+  </ion-segment-button>
+  </ion-slide>
+  </ion-slides>
+</ion-segment>
+<ion-item>
+<ion-badge slot="end">Live</ion-badge>
+</ion-item>
+
+<div id="dynamicSpline" style="width:100%; height:300px;"></div>
+<ion-card class="dodo" style="width:393px; height:100px;">
+
+  <ion-item >
+    <ion-row><div>
+<ion-col>
+ <h1 class="dob"> P&L-<ion-badge size="large" color="dark">40%</ion-badge></h1></ion-col></div></ion-row>
+  </ion-item>
+
+</ion-card>
+<ion-item>
+<ion-button size="large" slot="start">transfer</ion-button>
+<ion-button size="medium">hold</ion-button>
+<ion-button slot="end" size="large" color="danger">exit</ion-button>
+</ion-item>
+
+  <div [ngSwitch]="segment">
+    <ion-label *ngSwitchCase="'chart'">
+
+      <ion-item>
+        <h2 class="headi" >POOL SIZE=1LAKH</h2>
+
+      <ion-badge slot="end">Live</ion-badge>
+      </ion-item>
+        <google-chart [data]="columnChart"></google-chart>
+    <!-- <div id="dynamicSpline" style="width:100%; height:300px;"></div> -->
+      
+    </ion-label>
+    <ion-label *ngSwitchCase="'chart1'">
+      <ion-item>
+        <h2 class="headi" >POOL SIZE=1LAKH</h2>
+
+      <ion-badge slot="end">Live</ion-badge>
+      </ion-item>
+      
+      <google-chart [data]="columnChart1"></google-chart>
+    
+  </ion-label>
+  <ion-label *ngSwitchCase="'chart2'">
+    <ion-item>
+      <h2 class="headi" >POOL SIZE=1LAKH</h2>
+
+    <ion-badge slot="end">Live</ion-badge>
+    </ion-item>
+      
+    <google-chart [data]="columnChart2"></google-chart>
+  
+</ion-label>
+  </div>
+</ion-content>

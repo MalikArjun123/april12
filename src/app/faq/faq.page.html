@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons >
+      <ion-menu-button style="width:80px; height:50px;">
+      <ion-avatar style="width:100%; height:100%;">
+      <img src='../../assets/icon/Go-To-Success.png' style="width:100%; height:100%;">
+      </ion-avatar>
+      </ion-menu-button>
+      </ion-buttons>  
+    <ion-title class="ion-text-center">FAQ</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <!--Startup Features-->
+         
+ <ion-list class="list-padd ion-no-margin ion-no-padding">
+               
+     <ion-list-header>
+                     <ion-label>Startup Features</ion-label>
+                   
+     </ion-list-header>
+               
+     <div *ngFor="let p of startupMenu">
+                     
+         <!-- <div *ngIf="p.children || !p.module">
+                           
+             <ion-item detail (click)="expandMenu(p.title)">
+                                 <ion-icon slot="start" [name]="p.icon"></ion-icon>
+                                 <ion-label>                  {{ p.title }}                </ion-label>
+                               
+             </ion-item>
+                           
+             <div class="zero-h" [ngClass]="{'animate-expand': (showChildren == p.title)}">
+                                 
+                 <ion-label auto-hide="false" *ngFor="let option of p.children">
+                                       
+                     <ion-item class="ion-padding-start" [ngClass]="{'disabled':option.disabled}"  >
+                                             <ion-icon slot="start" [name]="option.icon"></ion-icon>
+                                             <ion-label>                      {{ option.title }}                    </ion-label>
+                                           
+                     </ion-item>
+                                     
+                 </ion-label>
+                               
+             </div>
+                         
+         </div> -->
+                     
+         <div *ngIf="p.children || p.module=='sidemenu'">
+                           
+             <ion-item detail (click)="expandMenu(p.title)">
+                                 <ion-icon slot="start" [name]="p.icon"></ion-icon>
+                                 <ion-label>                  {{ p.title }}                </ion-label>
+                               
+             </ion-item>
+                           
+             <div *ngIf="showChildren == p.title">
+                                 
+                 <div class="option_menu-button" *ngFor="let option of p.children;let i = index">
+                                       
+                     <!-- <ion-menu-button autoHide="false" menu="end"> -->
+                                             
+                         <ion-item (click)="showSidemenu(i)" class="ion-padding-start" [routerLink]="[option.url]">
+                                                   <ion-icon slot="start" [name]="option.icon"></ion-icon>
+                                                   <ion-label>                        {{ option.title }}                      </ion-label>
+                                                 
+                         </ion-item>
+                                           
+                     <!-- </ion-menu-button> -->
+                                     
+                 </div>
+                               
+             </div>
+                         
+         </div>
+                     
+         <div *ngIf="!p.children">
+                           
+             <!-- <ion-menu-toggle auto-hide="false"> -->
+                                 
+                 <ion-item [routerLink]="[p.url]" detail>
+                                       <ion-icon slot="start" [name]="p.icon"></ion-icon>
+                                       <ion-label>                    {{ p.title }}                  </ion-label>
+                                     
+                 </ion-item>
+                               
+             <!-- </ion-menu-toggle> -->
+                         
+         </div>
+                   
+     </div>
+             
+ </ion-list>
+</ion-content>

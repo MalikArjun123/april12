@@ -1,0 +1,102 @@
+<!-- <ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
+    
+    <ion-slide>
+      
+
+      <img src="assets/img/ica-slidebox-img-1.png"  style="width:100%;height:auto;" />
+      <h2 class="slide-title">
+        Welcome to
+        <b>TRADE11</b>
+      </h2>
+      <p>
+        
+        <b>Trade11 is a fantasy trading app where people will invest in traders expecting profit based on their performance.</b>
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-2.png" style="width:auto;height:290px;"   />
+      <h2 class="slide-title">What is TRADE11?</h2>
+      <p>
+        <b>TRADE11</b> is where people invest in traders expecting
+      to reach a target using day trade</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-3.png" style="width:100%;height:290px;"  />
+      <h2 class="slide-title">What is DAY TRADING?</h2>
+      <p>
+        <b>DAY TRADING</b> is where hedge funds trade stocks in market using money from investors.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
+      <h2 class="slide-title">Ready to TRADE?</h2>
+      <ion-button fill="clear" (click)="startApp()">
+        Continue
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content> -->
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts" (ionSlideDidChange)="sliderChanges($event)">
+              
+          <ion-slide *ngFor="let slide of slides; let i = index">
+                    
+              <div class="slide" [style.backgroundColor]="slide.slideBg">
+                          
+                  <div class="skip-button">
+                                <ion-button fill="clear" class="ion-color-light" (click)="skip()">Skip</ion-button>
+                              
+                  </div>
+                          <img [src]="slide.imageUrl" >
+                          
+                  <div>
+                                <h1 class="covb">{{slide.title}} </h1>
+                                <span ><div class="covo">{{slide.slideDesc}}</div></span>
+                              
+                  </div>
+                        
+              </div>
+                  
+          </ion-slide>
+              
+          <ion-slide>
+                    
+              <div class=" slide0">
+                          
+                  <!-- <div class="skip-button">
+                                <ion-button fill="clear" color="dark" (click)="skip()">Skip</ion-button>
+                              
+                  </div> -->
+                          <img src="assets/img/ica-slidebox-img-4.png">
+                          
+                  <div>
+                                <h1>Ready to TRADE!!</h1>
+                                <!-- <span>Use every feature of Ionic 5 Full App in Dark or Light modes </span>
+                                <div class="hint">(Try changing your display to Dark / Light)</div> -->
+                              
+                  </div>
+                          
+                  <div class="ion-padding ion-margin" Î>
+                                <ion-button color="primary" class="btnSubmit slideTitle ion-text-uppercase ion-padding-horizontal"  (click)="skip()">Get Started</ion-button>
+                              
+                  </div>
+                        
+              </div>
+                  
+          </ion-slide>
+            
+      </ion-slides>
+  </ion-content>

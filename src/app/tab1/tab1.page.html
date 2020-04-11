@@ -1,0 +1,279 @@
+
+<ion-header >
+
+  <ion-toolbar color = "tertiary">
+    <ion-buttons slot="start">
+    <ion-menu-button persistent=“true” autoHide='false' style="width:80px; height:50px;">
+    <ion-avatar style="width:100%; height:100%;">
+    <img src='../../assets/icon/Go-To-Success.png' style="width:100%; height:100%;">
+    </ion-avatar>
+    </ion-menu-button>
+    </ion-buttons>
+    <ion-item lines="none" color="tertiary" class="pola">
+    
+    <!-- <ion-title>{{folder}}</ion-title>
+      <img src="../../assets/icon/Go-To-Success.png"style="width:60px; height:60px;"> -->
+       <h2 class="font" text-center>TRADE11</h2> 
+        <ion-button (click)="logout()"slot="end"  size="medium" color="dark" ><ion-icon name="notifications-outline"></ion-icon></ion-button>
+
+    </ion-item >
+    <ion-item lines="none" color="tertiary" class="gogo">
+      <ion-button color="success" style="height: 40px;">
+      <div>
+      <ion-label position="floating" >select</ion-label>
+      <h4>Day</h4>
+      </div></ion-button>
+      <ion-progress-bar color="success" value="0"></ion-progress-bar>
+      <ion-button color="light" fill="outline" style="height: 43px;">
+      <div>
+      <ion-label position="floating">choose</ion-label>
+      <h3>Trader</h3>
+      </div>
+      </ion-button>
+      <ion-progress-bar color="success" value="0"></ion-progress-bar>
+      <ion-button color="light" fill="outline" style="height:40px">
+      <ion-label >Invest</ion-label>
+      </ion-button>
+      
+      <!-- <ion-label slot="start">heaven</ion-label> -->
+      
+      </ion-item>
+    
+  </ion-toolbar>
+ 
+  
+
+</ion-header>
+
+
+
+<ion-content class="coco" color="light">
+
+  <!----<div class="wrapper">
+   <div class="pie spinner"></div>
+     <div class="pie filler"></div>
+    <div class="mask"></div>
+  </div>-->
+
+  <ion-title>
+    <span>Current Sessions </span> 
+  <!-- <ion-label><ion-text><h3>{{this.user.name}}</h3></ion-text></ion-label> -->
+
+  </ion-title>
+    <ion-card class="categ1"  (click)="btnClicked()">
+      
+      <ion-card-header>
+        <!-- <ion-label position="floating" text-center>2ndMarch</ion-label> -->
+        <ion-row>
+        <h2 class="categ1-title"  ><li>  13thApril </li>  </h2>
+        <!-- <ion-label position="floating" >until:9 A.M</ion-label> -->
+
+        </ion-row>
+        <ion-item lines="none" color="light">
+          <ion-label >
+      <img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
+      </ion-label>
+      <h1>MONDAY</h1>
+      <ion-label class="bse">
+        <img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
+        </ion-label>
+      
+</ion-item>
+        <ion-label color="dark">
+        <p class="tim" id="demo" ></p>
+        </ion-label>
+      <!--  <ion-label color="dark">  {{ time | async }}</ion-label>-->
+      </ion-card-header>
+     <ion-card-content>
+    <!---    <p><ion-button size="small" color="primary" (click)="startTimer(10)">START</ion-button></p>
+    -->
+        <!-- <ion-row>
+          <ion-col no-paddin>
+            <ion-badge class="categ1-tag" >NSE</ion-badge>
+            <ion-badge class="categ1-tag">BSE</ion-badge>
+            <ion-badge class="categ1-tag">NYSE</ion-badge>
+            <ion-badge class="categ1-tag">LSE</ion-badge>
+          </ion-col>
+        </ion-row> -->
+        </ion-card-content>
+      </ion-card>
+      <ion-title>
+        <span>Upcoming Sessions </span> 
+      <!-- <ion-label><ion-text><h3>{{this.user.name}}</h3></ion-text></ion-label> -->
+    
+      </ion-title>
+
+      <ion-card  class="categ2" (click)="btnClicked()">
+        <!-- <ion-scroll scrollY="true"> -->
+
+        <ion-backdrop  >
+        </ion-backdrop>
+        <!-- </ion-scroll> -->
+
+        <ion-card-header>
+          <ion-row>
+            <h2 class="categ2-title" ><li>  14thApril </li>  </h2>
+            <!-- <ion-label position="floating" >until:9 A.M</ion-label> -->
+    
+            </ion-row>
+            <ion-item lines="none" color="default">
+              <ion-label >
+          <img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
+          </ion-label>
+          <h1>TUESDAY</h1>
+          <ion-label class="bse">
+            <img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
+            </ion-label>
+          
+    </ion-item>
+          <!-- <h2 class="categ2-title"> <li>NSE 3rdMarch </li>TUESDAY </h2> -->
+          <ion-label color="dark">
+          <p class="tim" id="demo1" ></p>
+          </ion-label>
+<!--          <ion-label color="dark">  {{ time | async }}</ion-label>-->
+        </ion-card-header>
+        <ion-card-content>
+     <!--     <p><ion-button size="small" color="primary" (click)="startTimer(10)">START</ion-button></p>
+     -->
+          <!-- <ion-row>
+            <ion-col no-paddin>
+              <ion-badge class="categ2-tag" >NSE</ion-badge>
+              <ion-badge class="categ2-tag">BSE</ion-badge>
+              <ion-badge class="categ2-tag">NYSE</ion-badge>
+              <ion-badge class="categ2-tag">LSE</ion-badge>
+            </ion-col>
+          </ion-row> -->
+          </ion-card-content>
+</ion-card>
+
+        <ion-card class="categ3" (click)="btnClicked()">
+          <ion-backdrop >
+          </ion-backdrop>
+          <ion-card-header>
+            <ion-row>
+            <h2 class="categ3-title" ><li>  15thApril </li>  </h2>
+</ion-row>
+<ion-item lines="none" color="default">
+  <ion-label >
+<img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
+</ion-label>
+<h1>WEDNESDAY</h1>
+<ion-label class="bse">
+<img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
+</ion-label>
+
+</ion-item>
+            <!-- <h2 class="categ3-title"><li> NSE 4thMarch </li>WEDNESDAY</h2> -->
+            <ion-label color="dark">
+            <p class="tim" id="demo2" ></p>
+            </ion-label>
+
+          </ion-card-header>
+          <ion-card-content>
+          <!--  <p><ion-button size="small" color="primary" (click)="startTimer(10)">START</ion-button></p>
+          -->
+            <!-- <ion-row>
+              <ion-col no-paddin>
+                <ion-badge class="categ3-tag" >NSE</ion-badge>
+            <ion-badge class="categ3-tag">BSE</ion-badge>
+            <ion-badge class="categ3-tag">NYSE</ion-badge>
+            <ion-badge class="categ3-tag">LSE</ion-badge>
+              </ion-col>
+            </ion-row> -->
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="categ4" (click)="btnClicked()">
+          <ion-backdrop >
+          </ion-backdrop>
+          <ion-card-header>
+            <ion-row>
+            <h2 class="categ4-title" ><li>  16thApril </li>  </h2>
+</ion-row>
+<ion-item lines="none" color="default">
+  <ion-label >
+<img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
+</ion-label>
+<h1>THURSDAY</h1>
+<ion-label class="bse">
+<img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
+</ion-label>
+
+</ion-item>
+            <!-- <h2 class="categ3-title"><li> NSE 4thMarch </li>WEDNESDAY</h2> -->
+            <ion-label color="dark">
+            <p class="tim" id="demo3" ></p>
+            </ion-label>
+
+          </ion-card-header>
+          <ion-card-content>
+          <!--  <p><ion-button size="small" color="primary" (click)="startTimer(10)">START</ion-button></p>
+          -->
+            <!-- <ion-row>
+              <ion-col no-paddin>
+                <ion-badge class="categ3-tag" >NSE</ion-badge>
+            <ion-badge class="categ3-tag">BSE</ion-badge>
+            <ion-badge class="categ3-tag">NYSE</ion-badge>
+            <ion-badge class="categ3-tag">LSE</ion-badge>
+              </ion-col>
+            </ion-row> -->
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="categ6" (click)="btnClicked()">
+          <ion-backdrop >
+          </ion-backdrop>
+          <ion-card-header>
+            <ion-row>
+            <h2 class="categ6-title" ><li>  17thApril </li>  </h2>
+</ion-row>
+<ion-item lines="none" color="default">
+  <ion-label >
+<img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
+</ion-label>
+<h1>FRIDAY</h1>
+<ion-label class="bse">
+<img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
+</ion-label>
+
+</ion-item>
+            <!-- <h2 class="categ3-title"><li> NSE 4thMarch </li>WEDNESDAY</h2> -->
+            <ion-label color="dark">
+            <p class="tim" id="demo4" ></p>
+            </ion-label>
+
+          </ion-card-header>
+          <ion-card-content>
+          <!--  <p><ion-button size="small" color="primary" (click)="startTimer(10)">START</ion-button></p>
+          -->
+            <!-- <ion-row>
+              <ion-col no-paddin>
+                <ion-badge class="categ3-tag" >NSE</ion-badge>
+            <ion-badge class="categ3-tag">BSE</ion-badge>
+            <ion-badge class="categ3-tag">NYSE</ion-badge>
+            <ion-badge class="categ3-tag">LSE</ion-badge>
+              </ion-col>
+            </ion-row> -->
+            </ion-card-content>
+          </ion-card>
+          
+  
+    
+<!-- <ion-card class="categ5" (click)="btnClicked()">
+  <ion-card-header>
+    <h2 class="categ5-title"><li>NSE 27thJAN </li>MONDAY</h2>
+    <ion-label color="dark">
+    <p  id="demo4" ></p>
+    </ion-label>
+  
+  </ion-card-header>
+  <ion-card-content>
+    <ion-row>
+      <ion-col no-padding>
+        <ion-badge class="categ5-tag" >NSE</ion-badge>
+        <ion-badge class="categ5-tag">BSE</ion-badge>
+        <ion-badge class="categ5-tag">NYSE</ion-badge>
+        <ion-badge class="categ5-tag">LSE</ion-badge>
+      </ion-col>
+    </ion-row>
+    </ion-card-content>
+  </ion-card> -->
+</ion-content>

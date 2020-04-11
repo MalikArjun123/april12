@@ -1,0 +1,183 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/contests"></ion-back-button>
+    </ion-buttons>
+    <span></span>
+    <ion-title class="font ion-text-center" >
+       Stats
+    </ion-title>
+    <ion-button slot="end" color="danger" fill="outline"> 
+       <ion-icon name="alarm" color="danger"></ion-icon><ion-col></ion-col>
+        <countdown-timer [end]="date"></countdown-timer>  </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-segment [(ngModel)]="segment" >
+    <ion-segment-button value="day"  >
+        <ion-label><h2>last day</h2></ion-label>
+    </ion-segment-button >
+    <ion-segment-button value="week">
+      <ion-label><h2>last week</h2></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="month">
+        <ion-label><h2>live</h2></ion-label>
+    </ion-segment-button>
+  </ion-segment >
+
+  <div [ngSwitch]="segment">
+  <!-- <div id="highchars" style="width:100%; height:400px;"></div> -->
+
+    <ion-label *ngSwitchCase="'week'">
+  <ion-item class="bona"lines="none" >
+        <google-chart [data]="columnChart"></google-chart>
+  </ion-item>
+  </ion-label>
+  <!-- <div id="highchars" style="width:100%; height:400px;"></div> -->
+  
+  <ion-label  *ngSwitchCase="'month'">
+    <!-- <ion-item >
+
+  <highcharts-chart 
+  
+   [Highcharts]="Highcharts"
+   [constructorType]="chartConstructor"
+   [options]="chartOptions"
+   [callbackFunction]="chartCallback"
+   ></highcharts-chart>
+
+</ion-item> -->
+<ion-row style="height:150px"></ion-row>
+<ion-label lines="none"><h1 class="ion-text-center">Invest</h1><ul> </ul><h4 class="ion-text-center">in any trader to get the live stats </h4></ion-label>
+</ion-label>
+  <ion-label  *ngSwitchCase="'day'">
+    <!-- <ion-card class="jok" > -->
+  <!-- <div id="highchars" style="width:100%; height:400px;"></div> -->
+  <ion-row style="height:50px">
+
+  </ion-row>
+<ion-card >
+ 
+  <highcharts-chart  
+  
+   [Highcharts]="Highcharts"
+   
+   [options]="chartOptionsi"
+   
+   ></highcharts-chart>
+</ion-card>
+<ion-card class="pop" style="height:50px" >
+ <ion-backdrop >
+          </ion-backdrop>
+</ion-card>
+
+<!-- </ion-card> -->
+  </ion-label>
+</div>
+
+  <!-- <ion-card color="dark" class="abc">
+
+    <ion-item>
+    <h3>RANK</h3><ul></ul><h3>Trader</h3><h3 slot="end">TARGET</h3>
+    </ion-item>
+    </ion-card>
+
+  <ion-card color="light">
+    <ion-item color="light">
+
+      <img src="../../assets/icon/numberone.png"style="width:30px; height:50px;">
+      <ul></ul><h2> Rakesh</h2><ul>
+        </ul><h2></h2> <ul>  </ul><ul></ul><ion-badge color="dark" slot="end"> <h2>99%</h2> </ion-badge>
+
+
+
+    </ion-item>
+      </ion-card>
+
+      <ion-card color="light">
+
+        <ion-item color="light">
+
+          <img src="../../assets/icon/freefireheroic.png"style="width:50px; height:50px;">
+          <ul></ul><h2> Jacob</h2><ul>
+            </ul><h2></h2> <ul></ul><ul></ul><ion-badge color="dark" slot="end"> <h2>95%</h2> </ion-badge>
+
+
+        </ion-item>
+          </ion-card>
+
+          <ion-card color="light">
+            <ion-item color="light">
+
+              <img src="../../assets/icon/freefirediamondfour.png"style="width:50px; height:50px;">
+              <ul></ul><h2> Arjun</h2><ul>
+                </ul><h2></h2> <ul>  </ul><ul></ul><ion-badge color="dark" slot="end"> <h2>93%</h2> </ion-badge>
+
+            </ion-item>
+              </ion-card>
+
+              <ion-card color="light">
+                <ion-item color="light">
+
+                  <img src="../../assets/icon/freefirediamondtwo.png"style="width:50px; height:50px;">
+                  <ul></ul><h2> Shanki</h2><ul>
+                    </ul><h2></h2> <ul>  </ul><ul></ul><ion-badge color="dark" slot="end"> <h2>90%</h2> </ion-badge>
+
+
+                </ion-item>
+                  </ion-card>
+
+                  <ion-card color="light">
+                    <ion-item color="light">
+
+                      <img src="../../assets/icon/freefirediamondone.png"style="width:50px; height:50px;">
+                      <ul></ul><h2> Ram</h2><ul>
+                        </ul><h2></h2> <ul>  </ul><ul></ul><ion-badge color="dark" slot="end"> <h2>87%</h2> </ion-badge>
+
+                    </ion-item>
+                      </ion-card>
+
+
+                   <ion-card  color="light">
+                      <ion-item color="light">
+
+                        <img src="../../assets/icon/freesilver4.png"style="width:50px; height:50px;">
+                        <ul></ul><h2> Ravi</h2><ul>
+                          </ul><h2></h2> <ul>  </ul><ul></ul><ion-badge color="dark" slot="end"> <h2>75%</h2> </ion-badge>
+
+                      </ion-item>
+
+                        </ion-card>
+                        <ion-card color="light">
+                          <ion-item color="light">
+
+                            <img src="../../assets/icon/freefiresilver.png"style="width:50px; height:50px;">
+                            <ul></ul><h2> Roopesh</h2><ul>
+                              </ul><h2></h2> <ul>  </ul><ul></ul><ion-badge color="dark" slot="end"> <h2>65%</h2> </ion-badge>
+
+                          </ion-item>
+                            </ion-card>
+                            <ion-card color="light">
+                              <ion-item color="light">
+
+                                <img src="../../assets/icon/freefirerealgold.png"style="width:50px; height:50px;">
+                                <ul></ul><h2> Ratan</h2><ul>
+                                  </ul><h2></h2> <ul>  </ul><ul></ul><ion-badge color="dark" slot="end"> <h2>60%</h2> </ion-badge>
+
+                              </ion-item>
+                                </ion-card>
+                                <ion-card color="light">
+                                  <ion-item color="light">
+
+                                    <img src="../../assets/icon/freefirebronze.png"style="width:50px; height:50px;">
+                                    <ul></ul><h2> Ratan</h2><ul>
+                                      </ul><h2></h2> <ul>  </ul><ul></ul><ion-badge color="dark" slot="end"> <h2>55%</h2> </ion-badge>
+
+                                  </ion-item>
+                                    </ion-card> -->
+
+
+
+</ion-content>

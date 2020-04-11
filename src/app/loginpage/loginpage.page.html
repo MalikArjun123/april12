@@ -1,0 +1,47 @@
+<ion-header >
+  <ion-toolbar color="tertiary">
+    <!-- <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons> -->
+    <ion-title text-center>
+      TRADE11
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding   >
+  <ion-card style="height:auto;" color="light" class="abc">
+    <ion-card-header>
+      <ion-row>
+        <div>
+          <img src="../../assets/icon/koko.png" >
+          <!-- <ion-text text-center>Trade11</ion-text> -->
+        </div>
+      </ion-row>
+      <!-- <ion-card-subtitle>enter your details</ion-card-subtitle> -->
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form class="form" [formGroup]="validations_form" 
+      (ngSubmit)="login(validations_form.value)">
+        <ion-item>
+          <ion-label position="floating" color="primary">Email </ion-label>
+          <ion-input type="text" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" color="primary">Password</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" class="submit-btn" color="success" type="submit" 
+        [disabled]="!validations_form.valid"><strong>Log In</strong></ion-button>
+        <label class="error-message"> {{errorMessage}} </label>
+      </form>
+      <p> 
+      
+        No account yet?<a routerLink="/register"> sign up </a>
+      </p>  
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

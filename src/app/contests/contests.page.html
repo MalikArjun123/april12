@@ -1,0 +1,159 @@
+
+  <!-- <firebase-ui></firebase-ui> -->
+
+
+<!-- <ion-tabs *ngIf="afAuth.auth.currentUser"> -->
+    <ion-menu class="sidemenu-1" persistent=“true” contentId= "main-content" type="overlay">
+    <!-- <ion-content > -->
+     
+     <!-- <ion-menu class="sidemenu-1" *ngIf="sidemenu==5" side="end" type="overlay" contentId="main-content"> -->
+             
+       <ion-content class="contentBg">
+                   
+           <div>
+                         
+               <ion-card slot="fixed" class="driverCard fixed ion-no-margin ion-no-padding" color="primary">
+                               
+                   <ion-item lines="none" class="ion-padding-vertical">
+                                     
+                       <div class="driverProfileImage">
+                                           
+                           <ion-avatar slot="start" class="profile">
+                                                 <img src="assets/icon/koko.png">                
+                           </ion-avatar>
+                                           
+                           <div class="ion-margin-start">
+                                                 <h3 class="userName ion-no-margin">{{this.user}}</h3>
+                                                 
+                               <span class="userDetails">
+                                                       <ion-icon name="star"></ion-icon>
+                                   Premium Member             
+                               </span>
+                                               
+                           </div>
+                                         
+                       </div>
+                                   
+                   </ion-item>
+                               
+                   <ion-card-content class="ion-no-margin ion-no-padding">
+                                     
+                       <div class="cardContent">
+                                           
+                           <div class="driverDetails">
+                                                 <ion-icon name="time" class="driverStatusIcons"></ion-icon>
+                                                 <ion-label class="textColor textBold detailsLabel">₹30000</ion-label>
+                                                 <p class="detailText ">Investment</p>
+                                               
+                           </div>
+                                           
+                           <div class="driverDetails">
+                                                 <ion-icon name="speedometer" class="driverStatusIcons"></ion-icon>
+                                                 <ion-label class="textColor textBold detailsLabel ion-text-uppercase"color="success">₹3000</ion-label>
+                                                 <p class="detailText">Profit/Loss</p>
+                                               
+                           </div>
+                                           
+                           <div class="driverDetails">
+                                                 <ion-icon name="time" class="driverStatusIcons"></ion-icon>
+                                                 <ion-label class="textColor textBold detailsLabel ">N-D</ion-label>
+                                                 <p class="detailText ">Top Trader</p>
+                                               
+                           </div>
+                                         
+                       </div>
+                                   
+                   </ion-card-content>
+                             
+               </ion-card>
+                       
+           </div>
+                   
+           <ion-list lines="none" class="ion-padding-top">
+                         
+               <ion-menu-toggle auto-hide="false" *ngFor="let item of sidemenuLayout1" menu="end">
+                               
+                   <ion-item [routerLink]="[item.url]">
+                                     <ion-icon slot="start" [name]="item.icon" [ngClass]="{'active':item.active}"></ion-icon>
+                                     <ion-label [ngClass]="{'active':item.active}">                {{item.title}}              </ion-label>
+                                   
+                   </ion-item>
+                             
+               </ion-menu-toggle>
+                       
+           <ion-button detail (click)="logout()" class="ion-margin-top">
+                        <ion-icon slot="start" name="person"></ion-icon>
+                        <ion-label>              Logout          </ion-label>
+                   
+        </ion-button>
+        <p class="version">Version 1.0 | &copy;Trade11 2020</p>
+                 <hr style="background: #f4f4f4"/>
+           </ion-list>
+           <ion-list>
+            <ion-item button [routerLink]="['/idea', idea.id]" *ngFor="let idea of (flower | async)">
+              {{ idea.name }}
+            </ion-item>
+          </ion-list>
+           <!-- <ion-label >
+               <h1>{{objuser.name}}</h1>
+               <h1>heyy</h1>
+             </ion-label> -->
+       </ion-content>
+           
+   <!-- </ion-menu> -->
+   
+   
+   <!-- </ion-content>  -->
+   </ion-menu> 
+     <!-- <ion-router-outlet id="main-content"></ion-router-outlet> -->
+   
+<ion-tabs>
+ 
+  <!-- <h3 >welcome {{afAuth.auth.currentUser.displayName}}</h3> -->
+  <!-- <ion-button  (click)="signOut()">log Out</ion-button> -->
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1" class="barcolor">
+      <!-- <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label> -->
+      <ion-avatar ><img src="../../assets/icon/Target Market.png"
+        style="width:60px; height:30px;"></ion-avatar>
+      <ion-label class="vov" color="light" position="inline">DAY</ion-label>
+
+        
+    </ion-tab-button>
+
+
+    <!-- <ion-tab-button tab="tab2">
+      <ion-icon name="flash"></ion-icon>
+      <ion-label>Teams</ion-label>
+    </ion-tab-button>-->
+
+    <ion-tab-button tab="tab3" class="barcolor">
+      <!-- <ion-icon name="trophy"></ion-icon>
+      <ion-label>My contests</ion-label> -->
+      <ion-avatar ><img src="../../assets/icon/LINK.png"
+        style="width:60px; height:30px;"></ion-avatar>
+      <ion-label class="vov" color="light" position="inline">My Trader</ion-label>
+
+    </ion-tab-button>
+
+    <ion-tab-button tab="feed" class="barcolor">
+      <!-- <ion-icon name="school"></ion-icon>
+      <ion-label>Feed</ion-label> -->
+      <ion-avatar ><img src="../../assets/icon/SEARCH.png"
+        style="width:60px; height:30px;"></ion-avatar>
+      <ion-label class="vov" color="light" position="inline">Feed</ion-label>
+
+    </ion-tab-button>
+    <ion-tab-button tab="more" class="barcolor">
+      <!-- <ion-icon name="more"></ion-icon>
+      <ion-label>more</ion-label> -->
+      <ion-avatar ><img src="../../assets/icon/Space Gloves.png"
+        style="width:50px; height:30px;"></ion-avatar>
+      <ion-label class="vov" color="light" position="inline">FAQ</ion-label>
+
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>

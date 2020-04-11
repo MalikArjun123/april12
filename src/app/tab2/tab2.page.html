@@ -1,0 +1,392 @@
+<ion-header >
+  <ion-toolbar color="tertiary">
+    <!-- <ion-badge slot="start" color="dark" (click)="btnClickedback()">
+      <--</ion-badge>  -->
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/contests"></ion-back-button>
+      </ion-buttons>
+      <!-- <ion-title color="primary" class="baba" text-center>
+        <h2 class="font">Target-Percentage</h2>
+
+        </ion-title> -->
+        <ion-item lines="none" color="tertiary" class="gogo">
+          <ion-button color="success" fill="outline" style="height: 40px;">
+          <div>
+          <ion-label position="floating" >select</ion-label>
+          <h4>Day</h4>
+          </div></ion-button>
+          <ion-progress-bar color="success" value="1"></ion-progress-bar>
+          <ion-button color="success"  style="height: 43px">
+          <div>
+          <ion-label position="floating">choose</ion-label>
+          <h3>Trader</h3>
+          </div>
+          </ion-button>
+          <ion-progress-bar color="success" value="0"></ion-progress-bar>
+          <ion-button color="light" fill="outline" style="height:40px">
+          <ion-label >Invest</ion-label>
+          </ion-button>
+          
+          <!-- <ion-label slot="start">heaven</ion-label> -->
+          
+          </ion-item>
+
+  </ion-toolbar>
+   <ion-item lines="none"  color="light">
+       <ion-button slot="start" fill="outline" size="small" (click)="presentAlertRadio()"  > sort By</ion-button>
+     
+
+       <!-- <ion-label slot="end" color="danger">  -->
+       <ion-button slot="end" color="danger" fill="outline"> 
+       <ion-icon name="alarm" color="danger"></ion-icon><ion-col></ion-col>
+        <countdown-timer [end]="date"></countdown-timer>  </ion-button>
+        <!-- </ion-label> -->
+       <!-- <app-countdown-timer [units]="{from: '48', to: '20'}" [end]="countdownDate"></app-countdown-timer> -->
+       <!-- <p *ngIf="hidevalue==false"> {{maxTime}}</p> -->
+     </ion-item>
+</ion-header>
+
+<ion-content scroll="true" class="coco" color="light">
+  
+  <!-- <ion-row>
+    <ion-col>
+      <ion-avatar>
+        <circle-progress [percent]="progress" [radius]="3" [outerStrokeWidth]="0.6" [innerStrokeWidth]="0.6"
+          [space]="-0.5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="0.2" [unitsFontSize]="0.2" [showSubtitle]="false"
+          [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+        </circle-progress>
+      </ion-avatar>
+    </ion-col>
+    <ion-col>
+      <ion-avatar>
+        <circle-progress [percent]="progress" [radius]="3" [outerStrokeWidth]="0.6" [innerStrokeWidth]="0.6"
+          [space]="-0.5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="0.2" [unitsFontSize]="0.2" [showSubtitle]="false"
+          [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+        </circle-progress>
+      </ion-avatar>
+    </ion-col>
+    <ion-col>
+      <ion-avatar>
+        <circle-progress [percent]="progress" [radius]="3" [outerStrokeWidth]="0.6" [innerStrokeWidth]="0.6"
+          [space]="-0.5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="0.2" [unitsFontSize]="0.2" [showSubtitle]="false"
+          [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+        </circle-progress>
+      </ion-avatar>
+    </ion-col>
+    <ion-col>
+      <ion-avatar>
+        <circle-progress [percent]="progress" [radius]="3" [outerStrokeWidth]="0.6" [innerStrokeWidth]="0.6"
+          [space]="-0.5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="0.2" [unitsFontSize]="0.2" [showSubtitle]="false"
+          [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+        </circle-progress>
+      </ion-avatar>
+    </ion-col>
+
+  </ion-row> -->
+  
+  <!-- <ion-segment [(ngModel)]="segment" >
+    <ion-segment-button value="hundred"  >
+      <ion-avatar>
+
+        <circle-progress position="floating" [percent]="progress" [radius]="20" [outerStrokeWidth]="3"
+          [innerStrokeWidth]="3" [space]="-3" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="16" [unitsFontSize]="8"
+          [showSubtitle]="false" [animation]="true" [animationDuration]="0" [startFromZero]="false"
+          [responsive]="true" [backgroundColor]="'#ff8080'"  >
+
+        </circle-progress>
+
+      </ion-avatar>
+    </ion-segment-button >
+    <ion-segment-button value="fifty">
+      <ion-avatar>
+
+        <circle-progress position="floating" [percent]="pappu" [radius]="20" [outerStrokeWidth]="3"
+          [innerStrokeWidth]="3" [space]="-3" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="16" [unitsFontSize]="8"
+          [showSubtitle]="false" [animation]="true" [animationDuration]="0" [startFromZero]="false"
+          [responsive]="true"[backgroundColor]="'#ffff00'" >
+
+        </circle-progress>
+
+      </ion-avatar>
+    </ion-segment-button>
+    <ion-segment-button value="thirty">
+      <ion-avatar>
+
+        <circle-progress position="floating" [percent]="nara" [radius]="20" [outerStrokeWidth]="3"
+          [innerStrokeWidth]="3" [space]="-3" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="16" [unitsFontSize]="8"
+          [showSubtitle]="false" [animation]="true" [animationDuration]="0" [startFromZero]="false"
+          [responsive]="true" [backgroundColor]="'#80ff80'">
+
+        </circle-progress>
+
+      </ion-avatar>
+    </ion-segment-button>
+  </ion-segment > -->
+  <div>
+    <ion-label >
+
+    
+  <ion-slides  [options]="slideOpt" class="bpg">
+    <!-- <ion-row align-items-end> -->
+
+    <ion-slide>
+      <ion-card   style="height: 160px;width:1000px"  color="light">
+        <ion-button  style="height: 190px;width:400px" (click)="def()"  color="light">
+
+        <ion-card-header color="light">
+          
+          <ion-item  lines="none" class="downi">
+            
+              
+
+<div>
+            <ion-avatar slot="start"><img src="../../assets/icon/memoji6.jpg"
+                style="width:50px; height:90px;"></ion-avatar>
+                <!-- <ion-label position="stacked"><h1>Rakesh</h1></ion-label> -->
+                <h3>RAKESH</h3>
+
+</div>
+          
+
+              
+<ul></ul><div>
+            <h3 class="prize">Trade pool</h3>
+            <h1 text-center>₹1Lakh</h1>
+
+            </div>
+<!-- <ion-label slot="end" position="fixed">1Lot Entry</ion-label> -->
+            <!-- <ion-label position="center">ABC</ion-label> -->
+            <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
+          
+          </ion-item>
+
+          <progress-bar [progress]="inc"></progress-bar>
+
+          <!-- <div class="progress">
+        <div class="bar" >
+          
+              <span class="percent" ng-show="((give.raised / give.goal) * 100) <= 100">{{((give.raised / give.goal) * 100) | number:0}}%</span>
+              
+          <span class="percent" >40% </span>
+        </div>
+      </div>-->
+          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 1000 </ion-badge><span>800 slots left</span>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-button>
+
+      </ion-card>
+
+    </ion-slide>
+
+    
+    <!-- <ion-slide>
+      <ion-card class="trail">
+        <ion-card-header>
+          <ion-item class="down">
+            <ion-avatar slot="start"><img src="../../assets/icon/freefirebronze.png" style="width:50px; height:50px;">
+            </ion-avatar>
+            <ul></ul>
+            <h1>YZA</h1>
+            <ion-button slot="end" size="medium" color="primary" (click)="upi()">₹100</ion-button>
+          </ion-item>
+          <progress-bar [progress]="sixth"></progress-bar>
+          <ion-card-subtitle> -> LOT TOTAL = <ion-badge color="dark"> 40 </ion-badge><span>75 slots left</span>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide> -->
+    <!-- </ion-row> -->
+  </ion-slides>
+
+  <ion-slides #slides  [options]="slideOpt" class="bpg">
+    <ion-slide>
+      <ion-card   style="height: 160px;width:1000px"  color="light">
+        <ion-button  style="height: 190px;width:400px" (click)="abc()"  color="light">
+        <ion-card-header color="light">
+          <ion-item  lines="none" class="downi">
+            <ion-row><div>
+            <ion-avatar slot="start"><img src="../../assets/icon/memoji5.jpg"
+                style="width:50px; height:50px;">
+            </ion-avatar>
+            <h3>JACOB</h3>
+
+            </div></ion-row>
+            <ul></ul><div>
+              <h3 class="prize">Trade pool</h3>
+              <h1 text-center>₹1Lakh</h1>
+  </div>
+            <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
+
+
+          </ion-item>
+          <progress-bar [progress]="loadProgress"></progress-bar>
+
+
+
+          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 1000 </ion-badge><span>600 slots left</span>
+          </ion-card-subtitle>
+
+
+        </ion-card-header>
+      </ion-button>
+
+      </ion-card>
+
+    </ion-slide>
+    
+  </ion-slides>
+  <ion-slides #slides  [options]="slideOpt" class="bpg">
+    <ion-slide>
+      <ion-card   style="height: 160px;width:1000px"  color="light">
+        <ion-button  style="height: 190px;width:400px" (click)="ghi()"  color="light">
+        <ion-card-header color="light">
+          <ion-item lines="none" class="downi">
+            <ion-row><div>
+            <ion-avatar slot="start"><img src="../../assets/icon/memoji4.jpg" style="width:50px; height:50px;">
+            </ion-avatar>
+            <h3>ARJUN</h3>
+
+            </div>
+            </ion-row>
+            
+            <ul></ul><div>
+              <h3 class="prize">Trade pool</h3>
+              <h1 text-center>₹75000</h1>
+            </div>
+
+            <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
+
+          </ion-item>
+
+          <progress-bar [progress]="first" ></progress-bar>
+
+          <ion-card-subtitle>  LOT TOTAL = <ion-badge color="dark"> 750 </ion-badge><span>375 slots left</span>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-button>
+
+      </ion-card>
+    </ion-slide>
+    
+  </ion-slides>
+   <ion-slides #slides  [options]="slideOpt" class="bpg" >
+    <ion-slide>
+
+      <ion-card   style="height: 160px;width:1000px"  color="light">
+        <ion-button  style="height: 190px;width:400px" (click)="jkl()"  color="light">
+
+          <ion-card-header color="light">
+            <ion-item lines="none" class="downi">
+              <ion-row><div>
+              <ion-avatar slot="start"><img src="../../assets/icon/memoji1.png" style="width:50px; height:50px;">
+              </ion-avatar>
+              <h3>ROHIT</h3>
+  
+              </div>
+              </ion-row>
+              
+              <ul></ul><div>
+                <h3 class="prize">Trade pool</h3>
+                <h1 text-center>₹75000</h1>
+              </div>
+  
+              <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
+  
+            </ion-item>
+  
+            <progress-bar [progress]="first" ></progress-bar>
+  
+            <ion-card-subtitle >  LOT TOTAL = <ion-badge color="dark"> 750 </ion-badge><span>375 slots left</span>
+            </ion-card-subtitle>
+          </ion-card-header>
+      </ion-button>
+
+      </ion-card>
+    </ion-slide>
+    
+  </ion-slides>
+  <ion-slides #slides  [options]="slideOpt" class="bpg" >
+    <ion-slide>
+
+      <ion-card   style="height: 160px;width:1000px"  color="light">
+        <ion-button  style="height: 190px;width:400px" (click)="mno()"  color="light">
+
+          <ion-card-header color="light">
+            <ion-item lines="none" class="downi">
+              <ion-row><div>
+              <ion-avatar slot="start"><img src="../../assets/icon/memoji2.png" style="width:50px; height:50px;">
+              </ion-avatar>
+              <h3>HARRY</h3>
+  
+              </div>
+              </ion-row>
+              
+              <ul></ul><div>
+                <h3 class="prize">Trade pool</h3>
+                <h1 text-center>₹50000</h1>
+              </div>
+  
+              <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
+  
+            </ion-item>
+  
+            <progress-bar [progress]="first" ></progress-bar>
+  
+            <ion-card-subtitle >  LOT TOTAL = <ion-badge color="dark"> 500 </ion-badge><span>250 slots left</span>
+            </ion-card-subtitle>
+          </ion-card-header>
+      </ion-button>
+
+      </ion-card>
+    </ion-slide>
+    
+  </ion-slides>
+  <ion-slides #slides  [options]="slideOpt" class="bpg" >
+    <ion-slide>
+
+      <ion-card   style="height: 160px;width:1000px"  color="light">
+        <ion-button  style="height: 190px;width:400px" (click)="pqr()"  color="light">
+
+          <ion-card-header color="light">
+            <ion-item lines="none" class="downi">
+              <ion-row><div>
+              <ion-avatar slot="start"><img src="../../assets/icon/memoji3.png" style="width:50px; height:50px;">
+              </ion-avatar>
+              <h3>SMARTY</h3>
+  
+              </div>
+              </ion-row>
+              
+              <ul></ul><div>
+                <h3 class="prize">Trade pool</h3>
+                <h1 text-center>₹50000</h1>
+              </div>
+  
+              <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
+  
+            </ion-item>
+  
+            <progress-bar [progress]="first" ></progress-bar>
+  
+            <ion-card-subtitle >  LOT TOTAL = <ion-badge color="dark"> 500 </ion-badge><span>250 slots left</span>
+            </ion-card-subtitle>
+          </ion-card-header>
+      </ion-button>
+
+      </ion-card>
+    </ion-slide>
+    
+  </ion-slides>
+  </ion-label>
+
+  
+  </div>
+</ion-content>

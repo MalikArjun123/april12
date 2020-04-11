@@ -1,0 +1,284 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.pola{
+    margin-bottom: -5px;
+}
+.learn-feed-page{
+
+  	.category-concept-card
+  	{
+  		//background-color: #F84C61;
+  		border-radius: 115px;
+  		box-shadow: true;
+      margin-bottom: 200px;
+      
+}
+
+ }
+// ion-item{
+//   margin-right: 30px;
+// }
+// .until{
+//   padding-top:100px;
+// }
+.bse{
+  margin-left: 20px;
+}
+.tim{
+  padding-left: 110px;
+}
+.coco{
+  --background: url(../../assets/icon/koko.png) 0 0/100% 100% no-repeat;
+
+}
+// ion-toolbar{
+//   margin-bottom:-10px;
+// }
+.gogo{
+  height:80px;
+  padding-top: -20px;
+  margin-bottom: -20px;
+ion-progress-bar {
+height: 5px;
+border-radius: 50px;
+width:20%;
+margin-top: 20px;
+}
+}
+.font{
+  font-style: bold;
+  font-size: large;
+  padding-left: 30px;
+  font-family: 'Times New Roman';
+  color:rgb(255, 255, 255);
+}
+
+.categ1 {
+  border-radius:  15px;
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+  .categ1-title
+  {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 2.2rem;
+    padding-left: 60px;
+    margin: 0px;
+  }
+  .categ1-tag
+  {
+    border: 1px solid #FFF;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-weight: 500;
+    margin-right: 4px;
+    opacity: 0.6;
+  }
+
+}
+.categ2 {
+  border-radius:  15px;
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+  .categ2-title
+  {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 2.2rem;
+    padding-left: 60px;
+
+    margin: 0px;
+  }
+  .categ2-tag
+  {
+    border: 1px solid #FFF;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-weight: 500;
+    margin-right: 4px;
+    opacity: 0.6;
+  }
+
+}
+.categ3 {
+  border-radius:  15px;
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+  .categ3-title
+  {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 2.2rem;
+    padding-left: 60px;
+
+    margin: 0px;
+  }
+  .categ3-tag
+  {
+    border: 1px solid #FFF;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-weight: 500;
+    margin-right: 4px;
+    opacity: 0.6;
+  }
+
+}
+.categ4 {
+  border-radius:  15px;
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+  .categ4-title
+  {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 2.2rem;
+    padding-left: 60px;
+
+    margin: 0px;
+  }
+  .categ4-tag
+  {
+    border: 1px solid #FFF;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-weight: 500;
+    margin-right: 4px;
+    opacity: 0.6;
+  }
+
+}
+ion-backdrop{
+  opacity: 0.4;
+  // scroll-behavior: true;
+  
+}
+// .categ5 {
+//   border-radius:  15px;
+//   margin-bottom: 20px;
+//   background: rgb(102, 206, 247);
+//   .categ5-title
+//   {
+//     color: #FFF;
+//     font-weight: 600;
+//     font-size: 2.2rem;
+//     margin: 0px;
+//   }
+//   .categ5-tag
+//   {
+//     border: 1px solid #FFF;
+//     color: rgb(0, 0, 0);
+//     background: transparent;
+//     font-weight: 500;
+//     margin-right: 4px;
+//     opacity: 0.6;
+//   }
+
+// }
+.categ6 {
+  border-radius:  15px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.733);
+  .categ6-title
+  {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 2.2rem;
+    padding-left: 60px;
+
+    margin: 0px;
+  }
+  .categ6-tag
+  {
+    border: 1px solid #FFF;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-weight: 500;
+    margin-right: 4px;
+    opacity: 0.6;
+  }
+
+}
+
+
+.wrapper {
+    position: relative;
+    margin: 40px auto;
+    background: #F84C61;
+  }
+
+  .wrapper,
+  .wrapper * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .wrapper .pie {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: #08C;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .wrapper .spinner {
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    z-index: 200;
+    border-right: none;
+    animation: rota 10s linear infinite;
+  }
+
+  .wrapper:hover .spinner,
+  .wrapper:hover .filler,
+  .wrapper:hover .mask {
+    animation-play-state: running;
+  }
+
+  .wrapper .filler {
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    left: 50%;
+    opacity: 0;
+    z-index: 100;
+    animation: opa 10s steps(1, end) infinite reverse;
+    border-left: none;
+  }
+
+  .wrapper .mask {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: 1;
+    z-index: 300;
+    animation: opa 10s steps(1, end) infinite;
+  }
+
+  @keyframes rota {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes opa {
+    0% {
+      opacity: 1;
+    }
+
+    50%,
+    100% {
+      opacity: 0;
+    }
+  }

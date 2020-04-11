@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons >
+    <ion-menu-button style="width:80px; height:50px;">
+    <ion-avatar style="width:100%; height:100%;">
+    <img src='../../assets/icon/Go-To-Success.png' style="width:100%; height:100%;">
+    </ion-avatar>
+    </ion-menu-button>
+    </ion-buttons>
+     <ion-title text-center> My contests</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="segment" >
+    <ion-segment-button value="hundred"  >
+        <ion-label><h2>completed</h2></ion-label>
+    </ion-segment-button >
+    <ion-segment-button value="fifty">
+      <ion-label><h2>Live</h2></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="thirty">
+        <ion-label><h2>Upcoming</h2></ion-label>
+    </ion-segment-button>
+  </ion-segment >
+    
+
+  <div [ngSwitch]="segment">
+    <ion-label *ngSwitchCase="'hundred'">
+  <ion-card color="dark">
+    <ion-item>
+    not completed any contests
+    </ion-item>
+    </ion-card>
+    <ion-list>
+      <ion-item button [routerLink]="['/idea', idea.id]" *ngFor="let idea of (flower | async)">
+        {{ idea.name }}
+      </ion-item>
+    </ion-list>
+<ion-label>
+  <h1>{{this.name}}</h1>
+  <!-- <h1>{{}}</h1> -->
+  <!-- <h1>{{this.bolo}}</h1>
+   -->
+   <h1>{{user.displayName}}</h1>
+</ion-label>
+
+
+
+  <!-- <ion-select-option [value]="month.value" *ngFor="let month of months">{{ month.name }}</ion-select-option> -->
+ 
+  </ion-label>
+  <ion-label *ngSwitchCase="'fifty'">
+
+      <ion-card color="dark">
+        <ion-item>
+        you haven't joined any contests so far
+        </ion-item>
+        </ion-card>
+  </ion-label>
+  <ion-label *ngSwitchCase="'thirty'">
+
+      <ion-card color="dark">
+        <ion-item>
+        NO Upcoming contests to show
+        </ion-item>
+        </ion-card>
+  </ion-label>
+  </div>
+  
+
+
+
+</ion-content>

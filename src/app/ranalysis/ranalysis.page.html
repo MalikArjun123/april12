@@ -1,0 +1,204 @@
+<!-- <firebase-ui></firebase-ui> -->
+<ion-header style="height:230px">
+    <!-- <ion-row align-items-end> -->
+      <ion-toolbar color="tertiary">
+      <ion-buttons  slot="start">
+        <ion-back-button  defaultHref="/tabs"></ion-back-button>
+      </ion-buttons>
+      <ion-item lines="none" color="tertiary" class="gogo">
+        <ion-button color="success" fill="outline" style="height: 40px;">
+        <div>
+        <ion-label position="floating" >select</ion-label>
+        <h4>Day</h4>
+        </div></ion-button>
+        <ion-progress-bar color="success" value="1"></ion-progress-bar>
+        <ion-button color="success" fill="outline" style="height: 43px">
+        <div>
+        <ion-label position="floating">choose</ion-label>
+        <h3>Trader</h3>
+        </div>
+        </ion-button>
+        <ion-progress-bar color="success" value="1"></ion-progress-bar>
+        <ion-button color="success"  style="height:40px">
+        <ion-label >Invest</ion-label>
+        </ion-button>
+        
+        <!-- <ion-label slot="start">heaven</ion-label> -->
+        
+        </ion-item>
+        </ion-toolbar>
+
+    <ion-slide class="bro">
+      
+        
+        
+      
+
+      <ion-card   style="height: 180px;width:1000px"  color="light">
+        
+        <ion-button  style="height: 190px;width:400px"   color="light">
+
+        <ion-card-header color="light">
+          
+          
+          <ion-item lines="none" class="downi">
+            
+              
+
+<div>
+  
+            <ion-avatar slot="start"><img src="../../assets/icon/memoji6.jpg"
+                style="width:50px; height:90px;"></ion-avatar>
+                <!-- <ion-label position="stacked"><h1>Rakesh</h1></ion-label> -->
+                <h3 >RAKESH</h3>
+
+</div>
+          
+
+              
+<ul></ul><div>
+            <h3 class="prize">Trade pool</h3>
+            <h1 text-center>₹1Lakh</h1>
+
+            </div>
+<!-- <ion-label slot="end" position="fixed">1Lot Entry</ion-label> -->
+            <!-- <ion-label position="center">ABC</ion-label> -->
+            <!-- <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button> -->
+            <div class="addBtnSection">
+              
+              <ion-text class="lot">No of Lots</ion-text>
+            <div>
+                                       <ion-button size="medium" color="danger" class="addBtn" *ngIf="cartService.productQty === 0" (click)="addToCart()">Add</ion-button>
+                        
+              <ion-segment class="seg"*ngIf="cartService.productQty > 0" mode="md">
+                              
+                  <ion-segment-button mode="md" no-padding color="undefined" (click)="updateCart('remove')" class="segmentBtn">
+                                    <ion-icon name="remove-circle-outline"></ion-icon>
+                                  
+                  </ion-segment-button>
+                              <ion-text padding-horizontal class="textUnits">{{cartService.productQty}}</ion-text>
+                              
+                  <ion-segment-button mode="md" no-padding color="undefined" (click)="updateCart('add')" class="segmentBtn">
+                                    <ion-icon name="add-circle-outline"></ion-icon>
+                                  
+                  </ion-segment-button>
+                            
+              </ion-segment>
+               </div>       
+          </div>
+          </ion-item>
+
+          <progress-bar [progress]="inc"></progress-bar>
+
+          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 1000 </ion-badge><span>{{abc}} slots left</span>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-button>
+
+      </ion-card>
+
+    </ion-slide>
+
+   
+ 
+  
+</ion-header>
+<ion-content >
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="presentPopover($event)">
+      <ion-icon name="cart"></ion-icon>
+      {{cartService.productQty}}
+      <!-- <ion-text class="ann">{{productQty}}</ion-text> -->
+      <!-- <span class="ann">{{productQty}}</span> -->
+  
+    </ion-fab-button>
+  </ion-fab>
+  
+  <!-- <ion-button (click)="myFunctionpro()" size="small">Try it</ion-button> -->
+
+ 
+  <!-- <ion-button (click)="myFunction()" size="small">Try it</ion-button> -->
+  
+ 
+  <!-- <div id="highcharts" style="width:100%; height:180px;"></div> -->
+
+
+  
+    
+      <!-- <ion-item lines="none">
+        <h2 class="headi" >POOL SIZE=1LAKH</ih2>
+
+      <ion-badge slot="end">weekly analysis</ion-badge>
+      </ion-item> -->
+        <!-- <google-chart [data]="columnChart"></google-chart> -->
+        <!-- <google-chart [data]="columnChart1"></google-chart> -->
+        <div id="highcharts"   style="width:100%; height:230px;"></div>
+
+      
+    
+  
+  
+  
+  <ion-item lines="none" class="dom">
+  <ion-slides  #slides pager="false" [options]="slideOpt">
+    <ion-slide>
+  <ion-card>
+    <ion-card-header>
+      <ion-item lines="none">
+        <ion-label text-center>profit</ion-label>
+<ion-badge slot="start">20-jan</ion-badge>
+<ion-badge slot="end" color="success">₹30000</ion-badge>
+      </ion-item>
+    </ion-card-header>
+  </ion-card>
+  </ion-slide>
+  <ion-slide>
+  <ion-card>
+    <ion-card-header>
+      <ion-item lines="none">
+        <ion-label text-center>profit</ion-label>
+<ion-badge slot="start">21-jan</ion-badge>
+<ion-badge slot="end" color="success">₹10000</ion-badge>
+      </ion-item>
+    </ion-card-header>
+  </ion-card>
+  </ion-slide>
+  <ion-slide>
+  <ion-card>
+    <ion-card-header>
+      <ion-item lines="none">
+        <ion-label text-center>loss</ion-label>
+<ion-badge slot="start">22-jan</ion-badge>
+<ion-badge slot="end" color="danger">₹15000</ion-badge>
+      </ion-item>
+    </ion-card-header>
+  </ion-card>
+  </ion-slide>
+  <ion-slide>
+  <ion-card>
+    <ion-card-header>
+      <ion-item lines="none">
+        <ion-label text-center>profit</ion-label>
+<ion-badge slot="start">23-jan</ion-badge>
+<ion-badge slot="end" color="success">₹30000</ion-badge>
+      </ion-item>
+    </ion-card-header>
+  </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <ion-card-header>
+        <ion-item lines="none">
+          <ion-label text-center>loss</ion-label>
+  <ion-badge slot="start">24-jan</ion-badge>
+  <ion-badge slot="end" color="danger">₹50000</ion-badge>
+        </ion-item>
+      </ion-card-header>
+    </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+  </ion-item> 
+
+
+ </ion-content>

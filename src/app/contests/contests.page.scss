@@ -1,0 +1,33 @@
+
+// .barcolor{
+//     background-color:rgb(247, 232, 183);
+//     // color:black;
+// }
+.barcolor{
+    background-color:rgb(28, 12, 65);
+    // color:black;
+}
+.vov{
+    margin-top: -30px;
+}
+.sidemenu-1 .contentBg {  --background: var(--ion-color-light) !important;}
+.sidemenu-1 .contentBg ion-list {  padding-left: 28px;}
+.sidemenu-1 .contentBg ion-list ion-icon {  color: #999;}
+.sidemenu-1 .contentBg ion-list ion-icon.active {  color: #3c8af7;}
+.sidemenu-1 .contentBg ion-list ion-label {  padding-left: 20px;  letter-spacing: 2px;}
+.sidemenu-1 .contentBg ion-list ion-label.active {  font-weight: bold;}
+.sidemenu-1 .contentBg .driverCard {  position: relative;  width: 100%;  padding-bottom: 5%;  box-shadow: none;  border-radius: 0;  padding-top: 10%;  background: linear-gradient(45deg, #2f2052 67%, #7e0080);  --background: linear-gradient(45deg, #2f2052 67%, #7e0080);}
+.sidemenu-1 .contentBg .driverCard ion-item {  padding: 15px 26px;  padding-bottom: 0;  background: rgba(0, 0, 0, 0);  --background: rgba(0, 0, 0, 0);}
+.sidemenu-1 .contentBg .driverCard ion-item .driverProfileImage {  display: -webkit-box;  display: flex;  -webkit-box-align: center;          align-items: center;  width: 100%;  -webkit-box-pack: center;          justify-content: center;}
+.sidemenu-1 .contentBg .driverCard ion-item .driverProfileImage ion-avatar {  width: 60px;  height: 60px;  margin: 0;  border: 2px solid #fff;}
+.sidemenu-1 .contentBg .driverCard ion-item .driverProfileImage .userDetails {  background: #fff;  border-radius: 90px;  display: -webkit-box;  display: flex;  padding-left: 6px;  padding-right: 6px;  -webkit-box-align: center;          align-items: center;  height: 1.8em;  padding-bottom: 0;  color: #ff4646;  font-size: 11px;}
+.sidemenu-1 .contentBg .driverCard ion-item .driverProfileImage .userName {  letter-spacing: 1px;  margin-bottom: 10px;  color: white;}
+.sidemenu-1 .contentBg .cardContent {  display: -webkit-box;  display: flex;  justify-content: space-around;  border-radius: 6px;  padding: 3%;}
+.sidemenu-1 .contentBg .cardContent .driverDetails {  display: -webkit-box;  display: flex;  -webkit-box-orient: vertical;  -webkit-box-direction: normal;          flex-direction: column;  -webkit-box-pack: center;          justify-content: center;  -webkit-box-align: center;          align-items: center;}
+.sidemenu-1 .contentBg .cardContent .driverStatusIcons {  font-size: 26px;  color: #f3e046;}
+.sidemenu-1 .contentBg .cardContent .detailText {  color: white;  font-size: 10px;}
+.sidemenu-1 .contentBg .cardContent .detailsLabel {  font-size: 18px;}
+
+
+
+.version {  margin: 0px 0px 0px 10px;  color: #989aa2;  font-size: 14px;}

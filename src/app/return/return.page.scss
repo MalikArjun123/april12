@@ -1,0 +1,24 @@
+.downi{
+    // margin-bottom: 10px;
+    margin-top: -40px;
+    // background-color: 3px solid black;
+    --background: default;
+  }
+  ion-card { border-top: 3px solid rgb(0, 13, 199);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+    border-width: medium;
+    border-top-width: thick;
+    // display: flex;
+    // flex-direction: column;
+    // width: 100% !important;
+    // margin: 0 !important;
+    width: 400px;
+  };
+  .font{
+    font-style: bold;
+    font-size: large;
+    font-family: 'Times New Roman';
+    color:rgb(255, 255, 255);
+  }
