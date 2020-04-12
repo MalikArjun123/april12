@@ -7,6 +7,8 @@ import { Component, ViewChild } from '@angular/core';
 import { PopoverPage } from '../about-popover/about-popover';
 import { PopoverController } from '@ionic/angular';
 import * as HighCharts from 'highcharts';
+// import {CountdownTimerModule} from 'angular-countdown-timer';
+
 // import {Tab1Page} from '../tab1/tab1.page';
 import { AlertController } from '@ionic/angular';
 @Component({

@@ -22,7 +22,9 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/firestore';
 
 import {AngularFireDatabaseModule} from '@angular/fire/database';
-
+import {Tab2PageModule} from '../app/tab2/tab2.module'
+// import {CountdownTimer} from 'angular-countdown-timer/countdown-timer.component';
+import {CountdownTimerModule} from 'angular-countdown-timer';
 
 import { IonicStorageModule } from '@ionic/storage';
 
@@ -42,6 +44,7 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule,
+    // Tab2PageModule,
   // CountdownTimerModule,
     // CluPage,
      IonicModule.forRoot(),
@@ -55,6 +58,7 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
     FirebaseUIModule.forRoot(firebaseUiAuthConfig)
     ],
   providers: [
+    // CountdownTimer,
     CluPage,
     StatusBar,
     ScreenOrientation,
