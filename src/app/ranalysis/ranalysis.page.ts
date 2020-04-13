@@ -40,8 +40,8 @@ export class Ranalysis {
   public barChart: GoogleChartInterface;
   @ViewChild('slides', { static: true }) slides: IonSlides;
   segment: string;
-  inc=0;
-  abc=800;
+  // inc=0;
+  // abc=100;
   constructor(public afAuth: AngularFireAuth,
     public popoverCtrl: PopoverController,
     public navCtrl:NavController,
@@ -50,6 +50,7 @@ export class Ranalysis {
 
     // private storage: Storage
   ) {
+    this.cartService.productQty=0;
     // this.segment="chart";
   }
 //  public productQty=0;
@@ -78,17 +79,17 @@ export class Ranalysis {
     }
 
   }
-  myFunctionpro() {
-    this.abc=100-this.inc;
+//   myFunctionpro() {
+//     this.abc=100-this.inc;
 
-    if(this.inc<100){
-    this.inc=this.inc+1;
-    }
-    else{
-      this.inc=0;
-    }
-   //  alert(this.inc);    
- }
+//     if(this.inc<100){
+//     this.inc=this.inc+1;
+//     }
+//     else{
+//       this.inc=0;
+//     }
+//    //  alert(this.inc);    
+//  }
   
   // ngOnInit() { }
 // ionViewWillEnter(){
@@ -142,7 +143,7 @@ ionViewDidEnter(){
       x: -18,
       y: -147
     },
-    subtitle:{text:'20thJAN,2020 - 24thJAN,2020'},
+    subtitle:{text:'6thApril,2020 - 10thApril,2020'},
     
     xAxis: {
   
@@ -178,7 +179,7 @@ ionViewDidEnter(){
         // style:{fontWeight:'bolder'}
         
       },
-      name: '20-jan',
+      name: '6-apr',
       data: [100],
       
       
@@ -191,7 +192,7 @@ ionViewDidEnter(){
         inside: true,
         
       },
-      name: '21-jan',
+      name: '7-apr',
       data: [70],
       type:undefined
     }, {
@@ -200,7 +201,7 @@ ionViewDidEnter(){
         inside: true,
         
       },
-      name: '22-jan',
+      name: '8-apr',
       data: [-60],
 
       type:undefined
@@ -210,7 +211,7 @@ ionViewDidEnter(){
         inside: true,
         
       },
-      name: '23-jan',
+      name: '9-apr',
       data: [80],
       type:undefined
 
@@ -220,12 +221,11 @@ ionViewDidEnter(){
         inside: true,
         
       },
-      name: '24-jan',
+      name: '10-apr',
       data: [-20],
       type:undefined
 
     }]
-    
 })
   }
   // ngOnInit() {

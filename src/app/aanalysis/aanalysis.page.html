@@ -58,7 +58,7 @@
               
 <ul></ul><div>
             <h3 class="prize">Trade pool</h3>
-            <h1 text-center>₹75000</h1>
+            <h1 text-center>₹10000</h1>
 
             </div>
 <!-- <ion-label slot="end" position="fixed">1Lot Entry</ion-label> -->
@@ -88,9 +88,9 @@
           </div>
           </ion-item>
 
-          <progress-bar [progress]="inc"></progress-bar>
+          <progress-bar [progress]="this.cartService.inc"></progress-bar>
 
-          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 750 </ion-badge><span>{{abc}} slots left</span>
+          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 100 </ion-badge><span>{{this.cartService.abc}} slots left</span>
           </ion-card-subtitle>
         </ion-card-header>
       </ion-button>
@@ -146,7 +146,7 @@
     <ion-card-header>
       <ion-item lines="none">
         <ion-label text-center>profit</ion-label>
-<ion-badge slot="start">20-jan</ion-badge>
+<ion-badge slot="start">6-apr</ion-badge>
 <ion-badge slot="end" color="success">₹30000</ion-badge>
       </ion-item>
     </ion-card-header>
@@ -157,7 +157,7 @@
     <ion-card-header>
       <ion-item lines="none">
         <ion-label text-center>profit</ion-label>
-<ion-badge slot="start">21-jan</ion-badge>
+<ion-badge slot="start">7-apr</ion-badge>
 <ion-badge slot="end" color="success">₹10000</ion-badge>
       </ion-item>
     </ion-card-header>
@@ -168,7 +168,7 @@
     <ion-card-header>
       <ion-item lines="none">
         <ion-label text-center>loss</ion-label>
-<ion-badge slot="start">22-jan</ion-badge>
+<ion-badge slot="start">8-apr</ion-badge>
 <ion-badge slot="end" color="danger">₹15000</ion-badge>
       </ion-item>
     </ion-card-header>
@@ -179,7 +179,7 @@
     <ion-card-header>
       <ion-item lines="none">
         <ion-label text-center>profit</ion-label>
-<ion-badge slot="start">23-jan</ion-badge>
+<ion-badge slot="start">9-apr</ion-badge>
 <ion-badge slot="end" color="success">₹30000</ion-badge>
       </ion-item>
     </ion-card-header>
@@ -190,7 +190,7 @@
       <ion-card-header>
         <ion-item lines="none">
           <ion-label text-center>loss</ion-label>
-  <ion-badge slot="start">24-jan</ion-badge>
+  <ion-badge slot="start">10-apr</ion-badge>
   <ion-badge slot="end" color="danger">₹50000</ion-badge>
         </ion-item>
       </ion-card-header>

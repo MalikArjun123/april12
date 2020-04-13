@@ -219,6 +219,7 @@ export class JPopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 2;
+        this.cartService.myFunctionpro();
 
       },
       onError => {
@@ -239,6 +240,7 @@ export class JPopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 2;
+        this.cartService.myFunctionpro2();
 
 
       },
@@ -258,6 +260,7 @@ export class JPopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 2;
+        this.cartService.myFunctionpro3();
 
       },
       onError => {
@@ -276,6 +279,7 @@ export class JPopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 2;
+        this.cartService.myFunctionpro4();
 
       },
       onError => {
@@ -294,6 +298,7 @@ export class JPopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 2;
+        this.cartService.myFunctionpro5();
 
       },
       onError => {

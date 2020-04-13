@@ -158,7 +158,7 @@
               
 <ul></ul><div>
             <h3 class="prize">Trade pool</h3>
-            <h1 text-center>₹1Lakh</h1>
+            <h1 text-center>₹10000</h1>
 
             </div>
 <!-- <ion-label slot="end" position="fixed">1Lot Entry</ion-label> -->
@@ -167,7 +167,7 @@
           
           </ion-item>
 
-          <progress-bar [progress]="inc"></progress-bar>
+          <progress-bar [progress]="this.cartService.inc"></progress-bar>
 
           <!-- <div class="progress">
         <div class="bar" >
@@ -177,7 +177,7 @@
           <span class="percent" >40% </span>
         </div>
       </div>-->
-          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 1000 </ion-badge><span>800 slots left</span>
+          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 100 </ion-badge><span>{{this.cartService.abc}} slots left</span>
           </ion-card-subtitle>
         </ion-card-header>
       </ion-button>
@@ -221,17 +221,17 @@
             </div></ion-row>
             <ul></ul><div>
               <h3 class="prize">Trade pool</h3>
-              <h1 text-center>₹1Lakh</h1>
+              <h1 text-center>₹10000</h1>
   </div>
             <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
 
 
           </ion-item>
-          <progress-bar [progress]="loadProgress"></progress-bar>
+          <progress-bar [progress]="this.jcartService.inc"></progress-bar>
 
 
 
-          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 1000 </ion-badge><span>600 slots left</span>
+          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 100 </ion-badge><span>{{this.jcartService.abc}} slots left</span>
           </ion-card-subtitle>
 
 
@@ -259,16 +259,16 @@
             
             <ul></ul><div>
               <h3 class="prize">Trade pool</h3>
-              <h1 text-center>₹75000</h1>
+              <h1 text-center>₹10000</h1>
             </div>
 
             <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
 
           </ion-item>
 
-          <progress-bar [progress]="first" ></progress-bar>
+          <progress-bar [progress]="this.acartService.inc" ></progress-bar>
 
-          <ion-card-subtitle>  LOT TOTAL = <ion-badge color="dark"> 750 </ion-badge><span>375 slots left</span>
+          <ion-card-subtitle>  LOT TOTAL = <ion-badge color="dark"> 100 </ion-badge><span>{{this.acartService.abc}} slots left</span>
           </ion-card-subtitle>
         </ion-card-header>
       </ion-button>

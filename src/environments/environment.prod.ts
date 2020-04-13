@@ -60,64 +60,64 @@ export const environment = {
     {
       title: 'What is Trade11??', url: null, icon: 'logo-wordpress',
       children: [
-        { title: 'Blogs', url: '/blogs', icon: 'list' },
-        { title: 'Single Blog', url: '/blogpage', icon: 'document', disabled: true },
+        { title: 'A platform for day traders where anyone can invest in them based on their performance expecting profit in the short term', url: '/blogs', icon: 'list' },
+        // { title: 'Single Blog', url: '/blogpage', icon: 'document', disabled: true },
       ]
     },
     {
       title: 'How to Invest??', url: null, icon: 'apps',
       children: [
-        { title: 'Tinder', url: '/tinder-cards', icon: 'heart', color: 'red' },
-        { title: 'Netflix', url: '/netflix', icon: 'film' }
+        { title: 'Pick day-Choose trader-Invest', url: '/tinder-cards', icon: 'heart', color: 'red' },
+        // { title: 'Netflix', url: '/netflix', icon: 'film' }
       ]
     },
     {
       title: 'Whom to Invest??', url: null, icon: 'apps',
       children: [
-        { title: 'Tinder', url: '/tinder-cards', icon: 'heart', color: 'red' },
-        { title: 'Netflix', url: '/netflix', icon: 'film' }
+        { title: 'Check the ranking section and choose trader based on their performance', url: '/tinder-cards', icon: 'heart', color: 'red' },
+        // { title: 'Netflix', url: '/netflix', icon: 'film' }
       ]
     },
     {
       title: 'How to withdraw my money???', url: null, icon: 'apps',
       children: [
-        { title: 'Tinder', url: '/tinder-cards', icon: 'heart', color: 'red' },
-        { title: 'Netflix', url: '/netflix', icon: 'film' }
+        { title: 'After completion of market time,you can choose exit or the fund gets credited into your wallet after T+1 day', url: '/tinder-cards', icon: 'heart', color: 'red' },
+        // { title: 'Netflix', url: '/netflix', icon: 'film' }
       ]
     },
     {
       title: 'Will i make money???', url: null, icon: 'apps',
       children: [
-        { title: 'Tinder', url: '/tinder-cards', icon: 'heart', color: 'red' },
-        { title: 'Netflix', url: '/netflix', icon: 'film' }
+        { title: 'Compared to other sports fantasy platform,this is a mere skill based investment,so the chances to make money are quite stupendous!!', url: '/tinder-cards', icon: 'heart', color: 'red' },
+        // { title: 'Netflix', url: '/netflix', icon: 'film' }
       ]
     },
     {
       title: 'Can i transfer my money to another trader???', url: null, icon: 'apps',
       children: [
-        { title: 'Tinder', url: '/tinder-cards', icon: 'heart', color: 'red' },
-        { title: 'Netflix', url: '/netflix', icon: 'film' }
+        { title: 'Yes,After Completion of market time,you can choose transfer to shift lots to another trader!!', url: '/tinder-cards', icon: 'heart', color: 'red' },
+        // { title: 'Netflix', url: '/netflix', icon: 'film' }
       ]
     },
     {
       title: 'How much does the company charge per lot???', url: null, icon: 'apps',
       children: [
-        { title: 'Tinder', url: '/tinder-cards', icon: 'heart', color: 'red' },
-        { title: 'Netflix', url: '/netflix', icon: 'film' }
+        { title: 'Its 5% from the each lot irrespective of profit or loss made by trader', url: '/tinder-cards', icon: 'heart', color: 'red' },
+        // { title: 'Netflix', url: '/netflix', icon: 'film' }
       ]
     },
     {
       title: 'what is the probability that i can make money???', url: null, icon: 'apps',
       children: [
-        { title: 'Tinder', url: '/tinder-cards', icon: 'heart', color: 'red' },
-        { title: 'Netflix', url: '/netflix', icon: 'film' }
+        { title: 'Its onto your decision that tell ,the more skilled the trader is,the more the money he makes ', url: '/tinder-cards', icon: 'heart', color: 'red' },
+        // { title: 'Netflix', url: '/netflix', icon: 'film' }
       ]
     },
     {
       title: 'How to contact customer care???', url: null, icon: 'apps',
       children: [
-        { title: 'Tinder', url: '/tinder-cards', icon: 'heart', color: 'red' },
-        { title: 'Netflix', url: '/netflix', icon: 'film' }
+        { title: 'We are available from 9 to 5,monday to Friday,Any queries is appreciated!! ', url: '/tinder-cards', icon: 'heart', color: 'red' },
+        // { title: 'Netflix', url: '/netflix', icon: 'film' }
       ]
     },
     {

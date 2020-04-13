@@ -7,7 +7,7 @@
     </ion-avatar>
     </ion-menu-button>
     </ion-buttons>
-     <ion-title text-center> My contests</ion-title>
+     <ion-title text-center> My Trader</ion-title>
     
   </ion-toolbar>
 </ion-header>
@@ -28,23 +28,11 @@
 
   <div [ngSwitch]="segment">
     <ion-label *ngSwitchCase="'hundred'">
-  <ion-card color="dark">
-    <ion-item>
-    not completed any contests
-    </ion-item>
-    </ion-card>
-    <ion-list>
-      <ion-item button [routerLink]="['/idea', idea.id]" *ngFor="let idea of (flower | async)">
-        {{ idea.name }}
-      </ion-item>
-    </ion-list>
-<ion-label>
-  <h1>{{this.name}}</h1>
-  <!-- <h1>{{}}</h1> -->
-  <!-- <h1>{{this.bolo}}</h1>
-   -->
-   <h1>{{user.displayName}}</h1>
-</ion-label>
+      <ion-row style="height:150px"></ion-row>
+      <ion-label lines="none"><h1 class="ion-text-center">You</h1><ul> </ul><h4 class="ion-text-center"> havent invested in any trader </h4></ion-label>
+      
+    
+
 
 
 
@@ -53,19 +41,15 @@
   </ion-label>
   <ion-label *ngSwitchCase="'fifty'">
 
-      <ion-card color="dark">
-        <ion-item>
-        you haven't joined any contests so far
-        </ion-item>
-        </ion-card>
+    <ion-row style="height:150px"></ion-row>
+    <ion-label lines="none"><h1 class="ion-text-center">Not</h1><ul> </ul><h4 class="ion-text-center">joined any investments so far </h4></ion-label>
+ 
   </ion-label>
   <ion-label *ngSwitchCase="'thirty'">
 
-      <ion-card color="dark">
-        <ion-item>
-        NO Upcoming contests to show
-        </ion-item>
-        </ion-card>
+    <ion-row style="height:150px"></ion-row>
+    <ion-label lines="none"><h1 class="ion-text-center">No</h1><ul> </ul><h4 class="ion-text-center"> upcoming activity to show </h4></ion-label>
+ 
   </ion-label>
   </div>
   

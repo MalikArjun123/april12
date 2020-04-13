@@ -8,7 +8,9 @@ import { PopoverPage } from '../about-popover/about-popover';
 import { PopoverController } from '@ionic/angular';
 import * as HighCharts from 'highcharts';
 // import {CountdownTimerModule} from 'angular-countdown-timer';
-
+import {CartService} from '../services/cart.service';
+import {JCartService} from '../services/jcart.service';
+import {ACartService} from '../services/acart.service';
 // import {Tab1Page} from '../tab1/tab1.page';
 import { AlertController } from '@ionic/angular';
 @Component({
@@ -48,8 +50,11 @@ date = new Date('2020-04-13T09:00:00');
 
 segment:string;
   constructor(public router: Router,
+    public acartService:ACartService,
   public alertController:AlertController,
     public popoverCtrl: PopoverController,
+  public cartService: CartService,
+  public jcartService:JCartService,
     private webIntent: WebIntent,
     // public  tobo:Tab1Page
     // public circle: NgCircleProgressModule

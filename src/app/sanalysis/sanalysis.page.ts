@@ -115,8 +115,9 @@ ionViewDidEnter(){
       x: -18,
       y: -147
     },
-    subtitle:{text:'20thJAN,2020 - 24thJAN,2020'},
     
+    subtitle:{text:'6thApril,2020 - 10thApril,2020'},
+
     xAxis: {
   
       // categories: ['Arjun'],
@@ -151,7 +152,7 @@ ionViewDidEnter(){
         // style:{fontWeight:'bolder'}
         
       },
-      name: '20-jan',
+      name: '6-apr',
       data: [100],
       
       
@@ -164,7 +165,7 @@ ionViewDidEnter(){
         inside: true,
         
       },
-      name: '21-jan',
+      name: '7-apr',
       data: [70],
       type:undefined
     }, {
@@ -173,7 +174,7 @@ ionViewDidEnter(){
         inside: true,
         
       },
-      name: '22-jan',
+      name: '8-apr',
       data: [-60],
 
       type:undefined
@@ -183,7 +184,7 @@ ionViewDidEnter(){
         inside: true,
         
       },
-      name: '23-jan',
+      name: '9-apr',
       data: [80],
       type:undefined
 
@@ -193,12 +194,11 @@ ionViewDidEnter(){
         inside: true,
         
       },
-      name: '24-jan',
+      name: '10-apr',
       data: [-20],
       type:undefined
 
     }]
-    
 })
   }
   // ngOnInit() {

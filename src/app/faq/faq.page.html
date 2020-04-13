@@ -61,11 +61,11 @@
                                        
                      <!-- <ion-menu-button autoHide="false" menu="end"> -->
                                              
-                         <ion-item (click)="showSidemenu(i)" class="ion-padding-start" [routerLink]="[option.url]">
-                                                   <ion-icon slot="start" [name]="option.icon"></ion-icon>
+                         <ion-label (click)="showSidemenu(i)" class="ion-padding-start" [routerLink]="[option.url]">
+                                                   <!-- <ion-icon slot="start" [name]="option.icon"></ion-icon> -->
                                                    <ion-label>                        {{ option.title }}                      </ion-label>
                                                  
-                         </ion-item>
+                         </ion-label>
                                            
                      <!-- </ion-menu-button> -->
                                      

@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Ranalysis } from '../ranalysis/ranalysis.page';
 import { Observable } from 'rxjs';
 import {CartService} from '../services/cart.service';
+// import { Roanalysis } from '../roanalysis/roanalysis.page';
 
 // declare module '*';
 // declare var RazorpayCheckout: any;
@@ -23,6 +24,7 @@ import {CartService} from '../services/cart.service';
     <ion-text color="dark"><h5>Trader-Rakesh</h5></ion-text>
     
     
+  
   
     <ion-button (click)="upi()" no-padding color="success">Checkout <ion-col></ion-col><ion-badge>₹100</ion-badge></ion-button>
     
@@ -139,6 +141,7 @@ import {CartService} from '../services/cart.service';
   `
 })
 export class PopoverPage {
+  // public rana:Ranalysis;
   // public productQty:Ranalysis;
 // public productty=this.cart.productQty;
 // public productQty=Ranalysis;
@@ -160,7 +163,9 @@ export class PopoverPage {
     // this.app.getRootNavs()[0].push('/support');
     this.popoverCtrl.dismiss();
   }
-  
+  // myFunctionpro(){
+  //   // return this.rana.myFunctionpro();
+  // }
   close(url: string) {
     window.open(url, '_blank');
     this.popoverCtrl.dismiss();
@@ -219,7 +224,9 @@ export class PopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 1;
-
+        this.cartService.myFunctionpro();
+        // this.rana.myFunctionpro();
+// this.rana.myFunctionpro;
       },
       onError => {
         console.log("error", onError);
@@ -239,6 +246,9 @@ export class PopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 1;
+        this.cartService.myFunctionpro2();
+        // this.rana.myFunctionpro();
+
 
 
       },
@@ -258,6 +268,9 @@ export class PopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 1;
+        this.cartService.myFunctionpro3();
+        // this.rana.myFunctionpro();
+
 
       },
       onError => {
@@ -276,6 +289,9 @@ export class PopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 1;
+        this.cartService.myFunctionpro4();
+        // this.rana.myFunctionpro();
+
 
       },
       onError => {
@@ -294,6 +310,9 @@ export class PopoverPage {
       onSuccess => {
         console.log("Success", onSuccess);
         this.cartService.pay = 1;
+        this.cartService.myFunctionpro5();
+        // this.rana.myFunctionpro();
+
 
       },
       onError => {
