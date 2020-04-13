@@ -398,7 +398,7 @@ pqr(){
   ngOnInit() {
     const getDownloadProgress = () => {
       // console.log('getDownload', this);
-      if (this.progress <= 99 ){
+      if (this.progress < 5 ){
         // console.log('inside if', this.progress);
         this.progress = this.progress + 1;
         // this.pappu = this.pappu +1;

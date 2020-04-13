@@ -177,8 +177,24 @@
           <span class="percent" >40% </span>
         </div>
       </div>-->
-          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 100 </ion-badge><span>{{this.cartService.abc}} slots left</span>
-          </ion-card-subtitle>
+      <ion-row>
+          <ion-col class="ion-text-lowercase"> <div>100 lots </div></ion-col>
+          <ion-col  size="1">
+       <!-- <ion-badge color="dark"> -->
+          <circle-progress [maxPercent]="2" [percent]="40" [radius]="660" [outerStrokeWidth]="60" [innerStrokeWidth]="60"
+          [space]="5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="873" [unitsFontSize]="0.2" [showSubtitle]="false"
+          [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+        </circle-progress>
+          </ion-col>
+          <ion-col>
+          <div class="ion-text-lowercase dolo">
+          {{this.cartService.abc}} slots left
+          </div>
+
+          </ion-col>
+          
+      </ion-row>
         </ion-card-header>
       </ion-button>
 
@@ -230,9 +246,26 @@
           <progress-bar [progress]="this.jcartService.inc"></progress-bar>
 
 
+ <ion-row>
+          <ion-col> <div class="ion-text-lowercase">100 lots </div></ion-col>
+          <ion-col  size="1">
+       <!-- <ion-badge color="dark"> -->
+          <circle-progress [maxPercent]="5" [percent]="100" [radius]="660" [outerStrokeWidth]="60" [innerStrokeWidth]="60"
+          [space]="5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="873" [unitsFontSize]="0.2" [showSubtitle]="false"
+          [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+        </circle-progress>
+          </ion-col>
+          <ion-col>
+          <div class="ion-text-lowercase dolo">
+          {{this.jcartService.abc}} lots left
+          </div>
 
-          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 100 </ion-badge><span>{{this.jcartService.abc}} slots left</span>
-          </ion-card-subtitle>
+          </ion-col>
+          
+      </ion-row>
+          <!-- <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 100 </ion-badge><span>{{this.jcartService.abc}} slots left</span>
+          </ion-card-subtitle> -->
 
 
         </ion-card-header>
@@ -268,8 +301,24 @@
 
           <progress-bar [progress]="this.acartService.inc" ></progress-bar>
 
-          <ion-card-subtitle>  LOT TOTAL = <ion-badge color="dark"> 100 </ion-badge><span>{{this.acartService.abc}} slots left</span>
-          </ion-card-subtitle>
+          <ion-row>
+          <ion-col> <div class="ion-text-lowercase">100 lots </div></ion-col>
+          <ion-col  size="1">
+       <!-- <ion-badge color="dark"> -->
+          <circle-progress [maxPercent]="0" [percent]="50" [radius]="660" [outerStrokeWidth]="60" [innerStrokeWidth]="60"
+          [space]="5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+          [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="873" [unitsFontSize]="0.2" [showSubtitle]="false"
+          [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+        </circle-progress>
+          </ion-col>
+          <ion-col>
+          <div class="ion-text-lowercase dolo">
+          {{this.acartService.abc}} lots left
+          </div>
+
+          </ion-col>
+          
+      </ion-row>
         </ion-card-header>
       </ion-button>
 

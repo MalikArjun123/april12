@@ -28,7 +28,7 @@ import {CountdownTimer} from 'angular-countdown-timer/countdown-timer.component'
     // Tab1PageModule,
     // RanalysisPageModule,
     FormsModule,
-    NgCircleProgressModule,
+    NgCircleProgressModule.forRoot(),
     // // {
     // //   // "backgroundGradient": true,
     // //   // "backgroundColor": "#ffffff",
