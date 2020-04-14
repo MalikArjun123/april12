@@ -218,6 +218,7 @@ export class SPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro();
         
 
       },
@@ -238,6 +239,7 @@ export class SPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro2();
 
 
       },
@@ -256,6 +258,7 @@ export class SPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro3();
 
       },
       onError => {
@@ -273,6 +276,7 @@ export class SPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro4();
 
       },
       onError => {
@@ -290,6 +294,7 @@ export class SPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro5();
 
       },
       onError => {

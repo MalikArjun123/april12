@@ -344,17 +344,33 @@
               
               <ul></ul><div>
                 <h3 class="prize">Trade pool</h3>
-                <h1 text-center>₹75000</h1>
+                <h1 text-center>₹10000</h1>
               </div>
   
               <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
   
             </ion-item>
   
-            <progress-bar [progress]="first" ></progress-bar>
+            <progress-bar [progress]="this.rcartService.inc" ></progress-bar>
   
-            <ion-card-subtitle >  LOT TOTAL = <ion-badge color="dark"> 750 </ion-badge><span>375 slots left</span>
-            </ion-card-subtitle>
+            <ion-row>
+              <ion-col> <div class="ion-text-lowercase">100 lots </div></ion-col>
+              <ion-col  size="1">
+           <!-- <ion-badge color="dark"> -->
+              <circle-progress [maxPercent]="3" [percent]="60" [radius]="660" [outerStrokeWidth]="60" [innerStrokeWidth]="60"
+              [space]="5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+              [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="873" [unitsFontSize]="0.2" [showSubtitle]="false"
+              [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+            </circle-progress>
+              </ion-col>
+              <ion-col>
+              <div class="ion-text-lowercase dolo">
+              {{this.rcartService.abc}} lots left
+              </div>
+    
+              </ion-col>
+              
+          </ion-row>
           </ion-card-header>
       </ion-button>
 
@@ -380,17 +396,33 @@
               
               <ul></ul><div>
                 <h3 class="prize">Trade pool</h3>
-                <h1 text-center>₹50000</h1>
+                <h1 text-center>₹10000</h1>
               </div>
   
               <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
   
             </ion-item>
   
-            <progress-bar [progress]="first" ></progress-bar>
+            <progress-bar [progress]="this.hcartService.inc" ></progress-bar>
   
-            <ion-card-subtitle >  LOT TOTAL = <ion-badge color="dark"> 500 </ion-badge><span>250 slots left</span>
-            </ion-card-subtitle>
+            <ion-row>
+              <ion-col> <div class="ion-text-lowercase">100 lots </div></ion-col>
+              <ion-col  size="1">
+           <!-- <ion-badge color="dark"> -->
+              <circle-progress [maxPercent]="3" [percent]="60" [radius]="660" [outerStrokeWidth]="60" [innerStrokeWidth]="60"
+              [space]="5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+              [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="873" [unitsFontSize]="0.2" [showSubtitle]="false"
+              [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+            </circle-progress>
+              </ion-col>
+              <ion-col>
+              <div class="ion-text-lowercase dolo">
+              {{this.hcartService.abc}} lots left
+              </div>
+    
+              </ion-col>
+              
+          </ion-row>
           </ion-card-header>
       </ion-button>
 
@@ -416,17 +448,33 @@
               
               <ul></ul><div>
                 <h3 class="prize">Trade pool</h3>
-                <h1 text-center>₹50000</h1>
+                <h1 text-center>₹10000</h1>
               </div>
   
               <ion-button slot="end" size="medium" color="primary" (click)="presentPopover($event)">₹100</ion-button>
   
             </ion-item>
   
-            <progress-bar [progress]="first" ></progress-bar>
+            <progress-bar [progress]="this.scartService.inc" ></progress-bar>
   
-            <ion-card-subtitle >  LOT TOTAL = <ion-badge color="dark"> 500 </ion-badge><span>250 slots left</span>
-            </ion-card-subtitle>
+            <ion-row>
+              <ion-col> <div class="ion-text-lowercase">100 lots </div></ion-col>
+              <ion-col  size="1">
+           <!-- <ion-badge color="dark"> -->
+              <circle-progress [maxPercent]="3" [percent]="60" [radius]="660" [outerStrokeWidth]="60" [innerStrokeWidth]="60"
+              [space]="5" [outerStrokeColor]="'#61A9DC'" [innerStrokeColor]="'#e7e8ea'"
+              [outerStrokeGradientStopColor]="'#53a9ff'" [titleFontSize]="873" [unitsFontSize]="0.2" [showSubtitle]="false"
+              [animation]="true" [animationDuration]="30" [startFromZero]="false" [responsive]="true">
+            </circle-progress>
+              </ion-col>
+              <ion-col>
+              <div class="ion-text-lowercase dolo">
+              {{this.scartService.abc}} lots left
+              </div>
+    
+              </ion-col>
+              
+          </ion-row>
           </ion-card-header>
       </ion-button>
 

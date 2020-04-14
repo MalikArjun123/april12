@@ -54,9 +54,9 @@
      <div class="pie filler"></div>
     <div class="mask"></div>
   </div>-->
-
-  <ion-title>
-    <span>Current Sessions </span> 
+<br>
+  <ion-title class="ion-text-center">
+    <span>Available Sessions </span> 
   <!-- <ion-label><ion-text><h3>{{this.user.name}}</h3></ion-text></ion-label> -->
 
   </ion-title>
@@ -65,11 +65,11 @@
       <ion-card-header>
         <!-- <ion-label position="floating" text-center>2ndMarch</ion-label> -->
         <ion-row>
-        <h2 class="categ1-title"  ><li>  13thApril </li>  </h2>
+        <h2 class="categ1-title"  ><ion-row><li class="lolo">   </li>April-15 </ion-row> </h2>
         <!-- <ion-label position="floating" >until:9 A.M</ion-label> -->
 
         </ion-row>
-        <ion-item lines="none" color="light">
+        <!-- <ion-item lines="none" color="light">
           <ion-label >
       <img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
       </ion-label>
@@ -78,7 +78,7 @@
         <img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
         </ion-label>
       
-</ion-item>
+</ion-item> -->
         <ion-label color="dark">
         <p class="tim" id="demo" ></p>
         </ion-label>
@@ -97,12 +97,15 @@
         </ion-row> -->
         </ion-card-content>
       </ion-card>
-      <ion-title>
+      <ion-title class="ion-text-center">
         <span>Upcoming Sessions </span> 
       <!-- <ion-label><ion-text><h3>{{this.user.name}}</h3></ion-text></ion-label> -->
     
       </ion-title>
-
+<ion-row ><div>
+  <h5 class="ion-text-center">
+  
+  Thursday</h5>
       <ion-card  class="categ2" (click)="btnClicked()">
         <!-- <ion-scroll scrollY="true"> -->
 
@@ -112,11 +115,11 @@
 
         <ion-card-header>
           <ion-row>
-            <h2 class="categ2-title" ><li>  14thApril </li>  </h2>
+            <h2 class="categ2-title" ><li>  April-16 </li>  </h2>
             <!-- <ion-label position="floating" >until:9 A.M</ion-label> -->
     
             </ion-row>
-            <ion-item lines="none" color="default">
+            <!-- <ion-item lines="none" color="default">
               <ion-label >
           <img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
           </ion-label>
@@ -125,7 +128,7 @@
             <img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
             </ion-label>
           
-    </ion-item>
+    </ion-item> -->
           <!-- <h2 class="categ2-title"> <li>NSE 3rdMarch </li>TUESDAY </h2> -->
           <ion-label color="dark">
           <p class="tim" id="demo1" ></p>
@@ -145,15 +148,17 @@
           </ion-row> -->
           </ion-card-content>
 </ion-card>
-
+</div><div>
+  <h5 class="ion-text-center">
+    Friday</h5>
         <ion-card class="categ3" (click)="btnClicked()">
           <ion-backdrop >
           </ion-backdrop>
           <ion-card-header>
             <ion-row>
-            <h2 class="categ3-title" ><li>  15thApril </li>  </h2>
+            <h2 class="categ3-title" ><li>  April-17 </li>  </h2>
 </ion-row>
-<ion-item lines="none" color="default">
+<!-- <ion-item lines="none" color="default">
   <ion-label >
 <img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
 </ion-label>
@@ -162,7 +167,7 @@
 <img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
 </ion-label>
 
-</ion-item>
+</ion-item> -->
             <!-- <h2 class="categ3-title"><li> NSE 4thMarch </li>WEDNESDAY</h2> -->
             <ion-label color="dark">
             <p class="tim" id="demo2" ></p>
@@ -182,14 +187,20 @@
             </ion-row> -->
             </ion-card-content>
           </ion-card>
+          </div>
+          </ion-row>
+          <ion-row>
+            <div>
+  <h5 class="ion-text-center">
+    Monday</h5>
           <ion-card class="categ4" (click)="btnClicked()">
           <ion-backdrop >
           </ion-backdrop>
           <ion-card-header>
             <ion-row>
-            <h2 class="categ4-title" ><li>  16thApril </li>  </h2>
+            <h2 class="categ4-title" ><li>  April-20 </li>  </h2>
 </ion-row>
-<ion-item lines="none" color="default">
+<!-- <ion-item lines="none" color="default">
   <ion-label >
 <img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
 </ion-label>
@@ -198,7 +209,7 @@
 <img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
 </ion-label>
 
-</ion-item>
+</ion-item> -->
             <!-- <h2 class="categ3-title"><li> NSE 4thMarch </li>WEDNESDAY</h2> -->
             <ion-label color="dark">
             <p class="tim" id="demo3" ></p>
@@ -217,15 +228,17 @@
               </ion-col>
             </ion-row> -->
             </ion-card-content>
-          </ion-card>
+          </ion-card></div><div>
+  <h5 class="ion-text-center">
+    Tuesday</h5>
           <ion-card class="categ6" (click)="btnClicked()">
           <ion-backdrop >
           </ion-backdrop>
           <ion-card-header>
             <ion-row>
-            <h2 class="categ6-title" ><li>  17thApril </li>  </h2>
+            <h2 class="categ6-title" ><li>  April-21 </li>  </h2>
 </ion-row>
-<ion-item lines="none" color="default">
+<!-- <ion-item lines="none" color="default">
   <ion-label >
 <img src="../../assets/icon/nse.png"style="width:90px; height:40px;">
 </ion-label>
@@ -234,7 +247,7 @@
 <img src="../../assets/icon/bse.png"style="width:90px; height:40px;">
 </ion-label>
 
-</ion-item>
+</ion-item> -->
             <!-- <h2 class="categ3-title"><li> NSE 4thMarch </li>WEDNESDAY</h2> -->
             <ion-label color="dark">
             <p class="tim" id="demo4" ></p>
@@ -253,7 +266,8 @@
               </ion-col>
             </ion-row> -->
             </ion-card-content>
-          </ion-card>
+          </ion-card></div>
+          </ion-row>
           
   
     

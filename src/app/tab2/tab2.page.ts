@@ -13,13 +13,16 @@ import {JCartService} from '../services/jcart.service';
 import {ACartService} from '../services/acart.service';
 // import {Tab1Page} from '../tab1/tab1.page';
 import { AlertController } from '@ionic/angular';
+import {RCartService} from '../services/rcart.service';
+import {HCartService} from '../services/hcart.service';
+import {SCartService} from '../services/scart.service';
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-date = new Date('2020-04-13T09:00:00');
+date = new Date('2020-04-15T09:30:00');
 
   public loadProgress: number = 0;
   public logo: number = 0;
@@ -55,6 +58,9 @@ segment:string;
     public popoverCtrl: PopoverController,
   public cartService: CartService,
   public jcartService:JCartService,
+  public rcartService:RCartService,
+  public hcartService:HCartService,
+  public scartService:SCartService,
     private webIntent: WebIntent,
     // public  tobo:Tab1Page
     // public circle: NgCircleProgressModule

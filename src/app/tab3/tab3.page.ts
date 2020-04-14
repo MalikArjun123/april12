@@ -10,7 +10,7 @@ import { GoogleChartInterface } from 'ng2-google-charts/google-charts-interfaces
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-date = new Date('2020-04-13T09:00:00');
+date = new Date('2020-04-15T09:30:00');
 
   public columnChart: GoogleChartInterface;
   chart;

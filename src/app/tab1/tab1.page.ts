@@ -65,7 +65,7 @@ this.menuCtrl.enable(true);
  // updateTimeValue(){
   ionViewDidEnter(){
     
-    let countDownDate = new Date("Apr 13, 2020 9:00:00").getTime();
+    let countDownDate = new Date("Apr 15, 2020 9:00:00").getTime();
     
     // Update the count down every 1 second
     let x = setInterval(function () {
@@ -83,21 +83,21 @@ this.menuCtrl.enable(true);
       console.log(now, "now", "countDownDate", countDownDate, "distance", distance, "days", days);
 
       // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      document.getElementById("demo").innerHTML =  + hours + "h "
         + minutes + "m " + seconds + "s " +"left";
       
       days=days+1;
-        document.getElementById("demo1").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s " +"left";
+        document.getElementById("demo1").innerHTML = days + "day " + hours + "hrs "
+         +"left";
         days=days+1;
-        document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s " +"left";  
+        document.getElementById("demo2").innerHTML = days + "day " + hours + "hrs "
+        +"left";  
+        days=days+3;
+        document.getElementById("demo3").innerHTML = days + "day " + hours + "hrs "
+        +"left";  
         days=days+1;
-        document.getElementById("demo3").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s " +"left";  
-        days=days+1;
-        document.getElementById("demo4").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s " +"left";  
+        document.getElementById("demo4").innerHTML = days + "day " + hours + "hrs "
+         +"left";  
         days=days+1;
         // document.getElementById("demo5").innerHTML = days + "d " + hours + "h "
         // + minutes + "m " + seconds + "s " +"left";  

@@ -27,7 +27,7 @@
   margin-left: 20px;
 }
 .tim{
-  padding-left: 110px;
+  padding-left: 20px;
 }
 .coco{
   --background: url(../../assets/icon/koko.png) 0 0/100% 100% no-repeat;
@@ -47,6 +47,19 @@ width:20%;
 margin-top: 20px;
 }
 }
+.lolo{
+  color:green;
+}
+ion-card{
+  height:120px;
+  width:160px;
+}
+.categ1{
+  
+  margin-left: 120px;
+  border-radius:  15px;
+
+}
 .font{
   font-style: bold;
   font-size: large;
@@ -55,99 +68,103 @@ margin-top: 20px;
   color:rgb(255, 255, 255);
 }
 
-.categ1 {
-  border-radius:  15px;
-  margin-bottom: 20px;
-  background: rgb(255, 255, 255);
-  .categ1-title
-  {
-    color: rgb(0, 0, 0);
-    font-weight: 400;
-    font-size: 2.2rem;
-    padding-left: 60px;
-    margin: 0px;
-  }
-  .categ1-tag
-  {
-    border: 1px solid #FFF;
-    color: rgb(0, 0, 0);
-    background: transparent;
-    font-weight: 500;
-    margin-right: 4px;
-    opacity: 0.6;
-  }
+// .categ1 {
+//   border-radius:  15px;
+//   margin-bottom: 20px;
+//   background: rgb(255, 255, 255);
+//   .categ1-title
+//   {
+//     color: rgb(0, 0, 0);
+//     font-weight: 400;
+//     font-size: 2.2rem;
+//     padding-left: 60px;
+//     margin: 0px;
+//   }
+//   .categ1-tag
+//   {
+//     border: 1px solid #FFF;
+//     color: rgb(0, 0, 0);
+//     background: transparent;
+//     font-weight: 500;
+//     margin-right: 4px;
+//     opacity: 0.6;
+//   }
 
-}
+// }
 .categ2 {
-  border-radius:  15px;
-  margin-bottom: 20px;
-  background: rgb(255, 255, 255);
-  .categ2-title
-  {
-    color: rgb(0, 0, 0);
-    font-weight: 400;
-    font-size: 2.2rem;
-    padding-left: 60px;
+  // border-radius:  15px;
+  // margin-bottom: 20px;
+  // background: rgb(255, 255, 255);
+  // .categ2-title
+  // {
+  //   color: rgb(0, 0, 0);
+  //   font-weight: 400;
+  //   font-size: 2.2rem;
+  //   padding-left: 60px;
 
-    margin: 0px;
-  }
-  .categ2-tag
-  {
-    border: 1px solid #FFF;
-    color: rgb(0, 0, 0);
-    background: transparent;
-    font-weight: 500;
-    margin-right: 4px;
-    opacity: 0.6;
-  }
+  //   margin: 0px;
+  // }
+  // .categ2-tag
+  // {
+  //   border: 1px solid #FFF;
+  //   color: rgb(0, 0, 0);
+  //   background: transparent;
+  //   font-weight: 500;
+  //   margin-right: 4px;
+  //   opacity: 0.6;
+  // }
+  margin-left: 30px;
+  border-radius:  15px;
 
 }
 .categ3 {
   border-radius:  15px;
-  margin-bottom: 20px;
-  background: rgb(255, 255, 255);
-  .categ3-title
-  {
-    color: rgb(0, 0, 0);
-    font-weight: 400;
-    font-size: 2.2rem;
-    padding-left: 60px;
+  // margin-bottom: 20px;
+  // background: rgb(255, 255, 255);
+  // .categ3-title
+  // {
+  //   color: rgb(0, 0, 0);
+  //   font-weight: 400;
+  //   font-size: 2.2rem;
+  //   padding-left: 60px;
 
-    margin: 0px;
-  }
-  .categ3-tag
-  {
-    border: 1px solid #FFF;
-    color: rgb(0, 0, 0);
-    background: transparent;
-    font-weight: 500;
-    margin-right: 4px;
-    opacity: 0.6;
-  }
+  //   margin: 0px;
+  // }
+  // .categ3-tag
+  // {
+  //   border: 1px solid #FFF;
+  //   color: rgb(0, 0, 0);
+  //   background: transparent;
+  //   font-weight: 500;
+  //   margin-right: 4px;
+  //   opacity: 0.6;
+  // }
 
 }
 .categ4 {
-  border-radius:  15px;
-  margin-bottom: 20px;
-  background: rgb(255, 255, 255);
-  .categ4-title
-  {
-    color: rgb(0, 0, 0);
-    font-weight: 400;
-    font-size: 2.2rem;
-    padding-left: 60px;
+  // border-radius:  15px;
+  // margin-bottom: 20px;
+  // background: rgb(255, 255, 255);
+  // .categ4-title
+  // {
+  //   color: rgb(0, 0, 0);
+  //   font-weight: 400;
+  //   font-size: 2.2rem;
+  //   padding-left: 60px;
 
-    margin: 0px;
-  }
-  .categ4-tag
-  {
-    border: 1px solid #FFF;
-    color: rgb(0, 0, 0);
-    background: transparent;
-    font-weight: 500;
-    margin-right: 4px;
-    opacity: 0.6;
-  }
+  //   margin: 0px;
+  // }
+  // .categ4-tag
+  // {
+  //   border: 1px solid #FFF;
+  //   color: rgb(0, 0, 0);
+  //   background: transparent;
+  //   font-weight: 500;
+  //   margin-right: 4px;
+  //   opacity: 0.6;
+  // }
+  margin-left: 30px;
+  border-radius:  15px;
 
 }
 ion-backdrop{
@@ -179,26 +196,26 @@ ion-backdrop{
 // }
 .categ6 {
   border-radius:  15px;
-  margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.733);
-  .categ6-title
-  {
-    color: rgb(0, 0, 0);
-    font-weight: 400;
-    font-size: 2.2rem;
-    padding-left: 60px;
+  // margin-bottom: 20px;
+  // background: rgba(255, 255, 255, 0.733);
+  // .categ6-title
+  // {
+  //   color: rgb(0, 0, 0);
+  //   font-weight: 400;
+  //   font-size: 2.2rem;
+  //   padding-left: 60px;
 
-    margin: 0px;
-  }
-  .categ6-tag
-  {
-    border: 1px solid #FFF;
-    color: rgb(0, 0, 0);
-    background: transparent;
-    font-weight: 500;
-    margin-right: 4px;
-    opacity: 0.6;
-  }
+  //   margin: 0px;
+  // }
+  // .categ6-tag
+  // {
+  //   border: 1px solid #FFF;
+  //   color: rgb(0, 0, 0);
+  //   background: transparent;
+  //   font-weight: 500;
+  //   margin-right: 4px;
+  //   opacity: 0.6;
+  // }
 
 }
 

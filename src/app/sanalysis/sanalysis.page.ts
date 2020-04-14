@@ -68,6 +68,8 @@ export class Sanalysis {
     public navCtrl:NavController,
     public cartService: SCartService
   ) {
+    this.cartService.productQty=0;
+
     // this.segment="chart";
   }
   async presentPopover(event: Event) {

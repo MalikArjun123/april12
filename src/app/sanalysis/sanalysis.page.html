@@ -58,7 +58,7 @@
               
 <ul></ul><div>
             <h3 class="prize">Trade pool</h3>
-            <h1 text-center>₹50000</h1>
+            <h1 text-center>₹10000</h1>
 
             </div>
 <!-- <ion-label slot="end" position="fixed">1Lot Entry</ion-label> -->
@@ -88,9 +88,9 @@
           </div>
           </ion-item>
 
-          <progress-bar [progress]="inc"></progress-bar>
+          <progress-bar [progress]="this.cartService.inc"></progress-bar>
 
-          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 500 </ion-badge><span>{{abc}} slots left</span>
+          <ion-card-subtitle> LOT TOTAL = <ion-badge color="dark"> 100 </ion-badge><span>{{this.cartService.abc}} slots left</span>
           </ion-card-subtitle>
         </ion-card-header>
       </ion-button>

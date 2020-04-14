@@ -5,7 +5,7 @@ import { WebIntent } from '@ionic-native/web-intent/ngx';
 import { ActivatedRoute } from '@angular/router';
 // import { Ranalysis } from '../ranalysis/ranalysis.page';
 import { Observable } from 'rxjs';
-import {CartService} from '../services/cart.service';
+import {RCartService} from '../services/rcart.service';
 
 // declare module '*';
 // declare var RazorpayCheckout: any;
@@ -145,7 +145,7 @@ export class RoPopoverPage {
 // productQty: Ranalysis;
 // public cart: Observable<Ranalysis>;
 // public productQty = 3;
-  constructor(private route: ActivatedRoute,public popoverCtrl: PopoverController,  public cartService: CartService,private webIntent: WebIntent) {
+  constructor(private route: ActivatedRoute,public popoverCtrl: PopoverController,  public cartService: RCartService,private webIntent: WebIntent) {
     // storage.get('productQty').then((parameter) => {
     //   console.log('Received Parameter: ' + parameter);
     // });
@@ -218,6 +218,7 @@ export class RoPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro();
         
 
       },
@@ -238,6 +239,7 @@ export class RoPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro2();
 
 
       },
@@ -256,6 +258,7 @@ export class RoPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro3();
 
       },
       onError => {
@@ -273,6 +276,7 @@ export class RoPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro4();
 
       },
       onError => {
@@ -290,6 +294,7 @@ export class RoPopoverPage {
     this.webIntent.startActivityForResult(options).then(
       onSuccess => {
         console.log("Success", onSuccess);
+        this.cartService.myFunctionpro5();
 
       },
       onError => {

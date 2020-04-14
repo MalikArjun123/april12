@@ -9,7 +9,7 @@ import { IonSlides } from '@ionic/angular';
 //  import { PopoverController } from '@ionic/angular';
 import { RoPopoverPage } from '../about-popover/ropopover';
 import { PopoverController } from '@ionic/angular';
-import {CartService} from '../services/cart.service';
+import {RCartService} from '../services/rcart.service';
 import * as HighCharts from 'highcharts';
 
 declare var google;
@@ -66,9 +66,11 @@ export class Roanalysis {
   constructor(public afAuth: AngularFireAuth,
     public popoverCtrl: PopoverController,
     public navCtrl:NavController,
-  public cartService: CartService
+  public cartService: RCartService
 
   ) {
+    this.cartService.productQty=0;
+
     // this.segment="chart";
   }
   async presentPopover(event: Event) {
