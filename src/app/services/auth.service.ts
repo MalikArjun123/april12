@@ -2,10 +2,18 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import * as firebase from 'firebase/app';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+import { Observable,BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
 // import { Events} from '@ionic/angular';s
 // import { IdeaService } from './idea.service';
+
+export class AuthInfo {
+  constructor(public $uid: string) { }
+
+  isLoggedIn() {
+    return !!this.$uid;
+  }
+}
 
 export interface User {
   id?: string,
@@ -18,6 +26,8 @@ export interface User {
 })
 
 export class AuthService {
+  static UNKNOWN_USER = new AuthInfo(null);
+  public authInfo$: BehaviorSubject<AuthInfo> = new BehaviorSubject<AuthInfo>(AuthService.UNKNOWN_USER);
   private userCollection: AngularFirestoreCollection<User>;
   private users: Observable<User[]>
   
@@ -70,4 +80,22 @@ export class AuthService {
     }
   // return firebase.auth().updateCurrentUser(value.name);
   }
+  // public loginWithGoogle(accessToken, accessSecret) {
+  //   // eslint-disable-next-line multiline-ternary
+  //   const credential = accessSecret ? firebase.auth.GoogleAuthProvider
+  //     .credential(accessToken, accessSecret) : firebase.auth.GoogleAuthProvider
+  //       .credential(accessToken);
+  //   return this.afAuth.auth.signInWithCredential(credential);
+  // }
+  // public googleLogin(): Promise<any> {
+  //   return this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+  // }
+  // public createSocialLoginUser(user): Promise<any> {
+  //   this.authInfo$.next(new AuthInfo(user.uid));
+  //   // return this.userDataServ.create({
+  //   //   email: user.email,
+  //   //   id: user.uid,
+  //   //   username: user.displayName
+  //   // });
+  // }
 }

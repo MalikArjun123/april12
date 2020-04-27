@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LoginpagePage } from './loginpage.page';
-
+// import {GoogleLoginComponent} from '../google-login/google-login.component'
 @NgModule({
   imports: [
     CommonModule,
@@ -20,6 +20,8 @@ import { LoginpagePage } from './loginpage.page';
       }
     ])
   ],
-  declarations: [LoginpagePage]
+  declarations: [LoginpagePage,
+    // GoogleLoginComponent,
+  ]
 })
 export class LoginpagePageModule {}

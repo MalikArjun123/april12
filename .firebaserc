@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "d10t11"
+    "default": "d10t11",
+    "yes": "traper-746e6"
   }
 }

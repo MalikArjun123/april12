@@ -22,7 +22,7 @@ import {SCartService} from '../services/scart.service';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-date = new Date('2020-04-15T09:30:00');
+date = new Date('2020-04-20T08:30:00');
 
   public loadProgress: number = 0;
   public logo: number = 0;

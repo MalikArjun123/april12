@@ -37,7 +37,7 @@ title: {
 // width:600,
 // // width: 400,
 // chartArea: { height: '100',width:'200' },
-subtitle:{text:'20thJAN,2020 - 24thJAN,2020'},
+subtitle:{text:'20thJAN,2020 - 13thApril,2020'},
 
 xAxis: {
   categories: ['Arjun', 'Rakesh', 'Jacob','Harry','smarty'],

@@ -24,6 +24,8 @@ export const environment = {
     { title: 'DAY TRADING', imageUrl: 'assets/img/ica-slidebox-img-3.png', slideDesc: 'DAY TRADING is where hedge funds trade stocks in market using money from investors.', slideBg: '#9f5afd' },
     // { title: 'READY to TRADE', imageUrl: 'assets/img/ica-slidebox-img-4.png', slideDesc: '', slideBg: '#2ecc71' }
   ],
+  // GOOGLE_WEBCLIENTID: '1003183421991-dm59idqftmj7jci3kljpstck1uk46lla.apps.googleusercontent.com',
+
   SIDEMENU_LAYOUTS: [
     {
       title: 'Home',
